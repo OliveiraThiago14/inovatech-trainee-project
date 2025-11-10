@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Unbounded:wght@400;700&display=swap');
 * {
     margin: 0;
-    padding: 0;
+    padding: 8px;
     box-sizing: border-box;
 }
 
@@ -10,7 +10,28 @@ body {
     background-color: #FFF1F1;
 }
 h1{
-    font-family: 'Unbounded', sans-serif;
+    color: #9112BC;
     font-size: 36px;
+    font-family: Unbounded;
+    font-weight: 700;
+    word-wrap: break-word
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.button{
+    display: flex;
+    height: 56px;
+    padding: 6px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    border-radius: 20.167px;
+    background: var(--Principal, #9112BC);
+    box-shadow: 5px 10px 25px 0 rgba(0, 0, 0, 0.40);
 }
 
