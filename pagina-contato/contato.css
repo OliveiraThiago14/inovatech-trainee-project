@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Unbounded';
+}
+
+body {
+    background-color: #FFF1F1;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: white;
+    padding: 20px 48px;
+    border-bottom: 1px solid #eee;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-barra ul {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+#nav-barra a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#nav-barra a:hover {
+    color: #FF9966;
+}
+
+#nav-barra .menu-header {
+    display: none;
+}
+
+#menu-mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    #menu-mobile {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 56px;
+        color: #9112BC;
+        cursor: pointer;
+    }
+    
+    #nav-barra {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #9112BC;
+
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 20px 24px;
+        box-sizing: border-box;
+    }
+
+    #nav-barra.ativo {
+        transform: translateX(0);
+    }
+
+    #nav-barra .menu-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    #nav-barra .logo-menu img {
+        height: 60px;
+    }
+
+    #btn-fechar {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 48px;
+        cursor: pointer;
+    }
+
+    #nav-barra ul {
+        flex-direction: column;
+        padding-top: 0;
+        gap: 28px;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    #nav-barra a {
+        color: white;
+        font-size: 20px;
+    }
+
+    #nav-barra a:hover {
+        color: #FF9966;
+    }
+}
