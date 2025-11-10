@@ -118,6 +118,7 @@ header .container {
     #nav-barra a {
         color: white;
         font-size: 20px;
+        font-weight: 500;
     }
 
     #nav-barra a:hover {
