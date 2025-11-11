@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Unbounded:wght@400;700&display=swap');
 
 .logo img{
-    width: 298px;
-    height: 84px;
+    width: 256px;
+    height: 80px;
 }
 
 .header-content{
@@ -14,7 +14,12 @@
     border-radius: 25px;
     height: 112px;
     justify-content: space-between;
-    padding: 16px 48px;
+    padding: 16px 28px;
+    gap: 56px;
+    position: fixed;
+    top: 0; 
+    z-index: 1000;
+    width: 96%;
 
     margin-bottom: 116px;
 }
@@ -25,13 +30,13 @@
 }
 
 .header-content nav a{
+    font-size: 14px;
     transition: all 0.8s gentle;
 }
 
 .header-content nav a::after{
     content: "|" ;
-    padding: 20px;
-    gap: 40px;
+    padding: 16px;
     font-weight: bold;
 }
 
@@ -42,7 +47,6 @@
 
 .header-content nav a:hover::after{
     color: #000;
-
 }
 
 .header-content nav a:last-child::after {
@@ -78,11 +82,11 @@
         top: 0;
         background-color: #9112BC;
         color: #fff;
-        height: 100%;
+        height: 1000%;
         width: 50vw;
         padding: 16px;
         animation-duration: 1s;
-        margin-left: -308vw;
+        margin-left: -300vw;
     }
 
     .header-content nav a::after{
@@ -108,6 +112,7 @@
     gap: 47px;
     padding: 62px 42px;
 
+    margin-top: 228px;
     margin-bottom: 116px;
 }
 
@@ -154,9 +159,18 @@
 
 
 
-.historico-container {
+
+.historico {
+    flex-wrap: nowrap;
+    width: 100%;
+    position: relative;
+    
+    margin-bottom: 116px;
+}
+
+.historico-container{
+    width: 400%;
     display: flex;
-    flex-direction: row;
     align-items: center;
     gap: 29px;
 }
@@ -186,6 +200,70 @@
 }
 
 
+
+
+
+.quem-somos-content .quem-somos-img {
+    display: block;
+    width: 564px;
+    height: 300px;
+    border-radius: 25px;
+    text-shadow: 5px 10px 25.8px rgba(0, 0, 0, 0.25);
+}
+
+.quem-somos-content .quem-somos-text img {
+    display: block;
+    width: 328px;
+    height: 48px;
+    margin-top: 136px;
+}
+
+.quem-somos-text p {
+    text-align: center;
+    font-size: 20px;
+    width: 80%;
+}
+
+.quem-somos-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.alinhamento-text {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin: 0;
+    gap: 16px;
+}
+
+.alinhamento-text p {
+    margin: 0;
+}
+
+.quem-somos-text button {
+    align-self: center;
+    margin: 0;
+}
+
+.quem-somos-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 108px;
+    padding: 0 0px;
+
+    margin: 0 auto;
+    margin-bottom: 116px;
+}
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 8px;
@@ -195,10 +273,12 @@
 body {
     font-family:'Unbounded', sans-serif;
     background-color: #FFF1F1;
+    min-height: 100%;
 }
+
 h1{
     color: #9112BC;
-    font-size: 36px;
+    font-size: 32px;
     font-family: Unbounded;
     font-weight: 524;
     word-wrap: break-word
@@ -224,7 +304,6 @@ a{
     cursor: pointer;
 
     transition: background-color 0.3s ease;
-    margin-left: 108px;
 }
 
 .button:hover{
@@ -242,7 +321,7 @@ a{
     gap: 23px;
     border-radius: 16px;
     height: 264px;
-    width: 412px;
+    width: 472px;
 }
 
 .contato-content{
