@@ -153,4 +153,74 @@ header .container {
     #nav-barra a:hover {
         color: #FF9966;
     }
+
+    /*Nossa Direção*/
+    .direcao-cards {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+}
+
+/*Nossa Direção*/
+.direcao {
+    background-color: #D792EE;
+    padding: 38px 0;
+    text-align: center;
+}
+
+.direcao h2 {
+    color: #9112BC;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.direcao .subtitulo {
+    color: white;
+    font-size: 20px;
+    margin: 0 auto 48px auto;
+}
+
+.direcao-cards {
+    display: flex;
+    justify-content: center;
+    gap: 74px;
+
+    background-color: #9112BC;
+    padding: 40px;
+    border-radius: 25px;
+}
+
+.card-perfil {
+    background-color: #9112BC;
+    border-radius: 25px;
+    flex: 1;
+    max-width: 600px;
+}
+
+.card-perfil img {
+    border-radius: 25px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin: 0 auto 16px auto;
+}
+
+.card-perfil h3 {
+    color: white;
+    font-size: 32px;
+    margin-bottom:16px;
+}
+
+.card-perfil span {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card-perfil p {
+    font-size: 14px;
+    color: white;
 }
