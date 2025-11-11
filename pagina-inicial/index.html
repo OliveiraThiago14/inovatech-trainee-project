@@ -10,7 +10,7 @@
     <header class="site-header">
         <div class="header-content" id="header-content">
             <button onclick="toggleSideBar()" class="btn_icon_header_hamb">
-                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="80" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                 </svg>
             </button>
@@ -21,118 +21,136 @@
             </div>
             <nav class="bar-navigation" id="bar-navigation">
                 <button onclick="toggleSideBar()" class="btn_icon_header_x">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="80" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
                         <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
                     </svg>
                 </button>
-                <a href="#" class="nav-link">Inicio</a>
-                <a href="#" class="nav-link">Quem somos?</a>
-                <a href="#" class="nav-link">Serviços</a>
-                <a href="#" class="nav-link">Parceiros</a>
-                <a href="#" class="nav-link">Contatos</a>
+                <a href="#preparado" class="nav-link">Inicio</a>
+                <a href="#quem-somos" class="nav-link">Quem somos?</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#parceiros" class="nav-link">Parceiros</a>
+                <a href="#contato" class="nav-link">Contatos</a>
             </nav>
         </div>
     </header>
 
-    <section id="preparado">
-        <div class="preparado-container">
+    <main>
+        <section id="preparado">
+            <div class="preparado-container">
+                <div class="preparado-text">
+                    <h1>Preparado para a próxima era? Vamos inovar juntos.</h1>
+                    <div class="alinhamento_h2_button">
+                        <p>Fale com nossos especialistas</p>
+                        <a href="#" class="button button-principal"> Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="img-preparado">
+                    <img src="./assets/imagem-equipe-inovatech1.png" alt="Equipe InovaTech">
+                </div>
+            </div>
+        </section>
 
-            <div class="preparado-text">
-                <h1>Preparado para a próxima era? Vamos inovar juntos.</h1>
-                <div class="alinhamento_h2_button">
-                    <h2>Fale com nossos especialistas</h2>
+        <section id="historico">
+            <div class="historico-container">
+                <div class="cards card-historico">
+                    <h2 class="historico-numero">+10</h2>
+                    <p class="historico-subtitulo">anos de experiência!</p>
+                    <p class="historico-descricao">Inovando o mercado de tecnologia e construindo o futuro ao lado de nossos clientes.</p>
+                </div>
+                <div class="cards card-historico">
+                    <h2 class="historico-numero">+100</h2>
+                    <p class="historico-subtitulo">projetos entregues</p>
+                    <p class="historico-descricao">Alto impacto com soluções de sucesso em diversos setores da indústria!</p>
+                </div>
+                <div class="cards card-historico">
+                    <h2 class="historico-numero">+75</h2>
+                    <p class="historico-subtitulo">clientes satisfeitos!</p>
+                    <p class="historico-descricao">Mais que projetos, entregamos idéias e estratégias que transformam vidas!</p>
+                </div>
+                <div class="cards card-historico">
+                    <h2 class="historico-numero">+40</h2>
+                    <p class="historico-subtitulo">especialistas certificados</p>
+                    <p class="historico-descricao">Contamos com um time capacitado e multidiciplinar para te atender e desenvolver as melhores soluções para seu negócio!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="quem-somos">
+            <div class="quem-somos-content">
+                <div class="quem-somos-img">
+                    <img src="./assets/quemsomos-img.png" alt="Escritório InovaTech">
+                </div>
+                <div class="quem-somos-text">
+                    <img src="./assets/quemsomos-title.svg" alt="Quem Somos">
+                    <p>Nascemos com uma cultura vibrante e um time unido, focado em resolver desafios reais. Hoje, somos especialistas em transformar negócios através da tecnologia, mantendo o espírito de colaboração e inovação que nos trouxe até aqui.</p>
+                    <p> Conheça nossa história, nossa cultura de inovação e a equipe pronta para impulsionar seu projeto </p>
                     <a href="#" class="button button-principal"> Saiba Mais</a>
                 </div>
             </div>
+        </section>
 
-            <div class="img-preparado">
-                <img src="./assets/imagem-equipe-inovatech1.png" alt="Equipe InovaTech">
+        <section id="servicos">
+            <div class="servicos-content">
+                <div class="servicos-text">
+                    <h2 class="servicos-text-title">Do conceito à execução</h2>
+                    <p>Entregamos projetos de tecnologia que geram impacto real e transformam os resultados do seu negócio!</p>
+                    <p>Conheça nossos serviços!</p>
+                </div>
+                <div class="servicos-apresentacao">
+                    <div class="cards card-servicos">
+                        <h2 class="card-title servicos-titulo">Consultoria Estratégica</h2>
+                        <p class="card-subtitulo servicos-subtitulo">Mais que análise, estratégia!</p>
+                        <p class="card-descricao servicos-descricao"> Mais do que análise, entregamos estratégia. Mapeamos as oportunidades do seu negócio e definimos o plano de ação exato para sua transformação digital e crescimento.</p>
+                    </div>
+                    <div class="cards card-servicos">
+                        <h2 class="card-title servicos-titulo">Concepção e Design</h2>
+                        <p class="card-subtitulo servicos-subtitulo">Da ideia ao projeto!</p>
+                        <p class="card-descricao servicos-descricao"> Da ideia ao projeto. Desenhamos a arquitetura e a experiência do usuário da sua solução. Criamos produtos intuitivos focados em resolver problemas reais e engajar seus clientes.</p>
+                    </div>
+                    <div class="cards card-servicos">
+                        <h2 class="card-title servicos-titulo">Desenvolvimento de Software</h2>
+                        <p class="card-subtitulo servicos-subtitulo">Do código ao resultado!</p>
+                        <p class="card-descricao servicos-descricao"> Damos vida ao seu projeto com tecnologia de ponta. Nossos especialistas desenvolvem softwares robustos, escaláveis e seguros, prontos para performar e impulsionar seus resultados.</p>
+                    </div>
+                    <a href="#" class="button button-principal"> Saiba Mais</a>
+                </div>
             </div>
+        </section>
 
-        </div>
-    </section>
+        <section id="parceiros">
+            <div class="parceiros-content">
+                <div class="parceiros-text">
+                    <h2>NASCEMOS DA INOVAÇÃO. CRESCEMOS COM PARCERIAS!</h2>
+                    <p>Conheça quem nos apoia!</p>
+                    <div class="parceiros-logo">
+                        <div class="logo-slide">
+                            <img src="./assets/logo-aws.png" alt="">
+                            <img src="./assets/logo-ifood.png" alt="">
+                            <img src="./assets/logo-nubank.png" alt="">
+                            <img src="./assets/logo-orcestra.png" alt="">
+                            <img src="./assets/logo-totvs.png" alt="">
+                            <img src="./assets/logo-linux.png" alt="">
+                            <img src="./assets/logo-adobe.png" alt="">
+                            <img src="./assets/logo-microsoft.png" alt="">
+                            <img src="./assets/logo-concentro.png" alt="">
+                        </div>
+                    </div>
+                    <a href="#" class="button button-principal"> Saiba Mais</a>
+                </div>
+            </div>
+        </section>
 
-    <section id="historico">
-        <div class="historico-container">
+        <section id="contato">
+            <div class="contato-content">
+                <form action=""></form>
 
-            <div class="cards card-historico">
-                <h2 class="historico-numero">+10</h2>
-                <p class="historico-subtitulo">anos de experiência!</p>
-                <p class="historico-descricao">Inovando o mercado de tecnologia e construindo o futuro ao lado de nossos clientes.</p>
             </div>
-            <div class="cards card-historico">
-                <h2 class="historico-numero">+100</h2>
-                <p class="historico-subtitulo">projetos entregues</p>
-                <p class="historico-descricao">Alto impacto com soluções de sucesso em diversos setores da indústria!</p>
-                
-            </div>
-            <div class="cards card-historico">
-                <h2 class="historico-numero">+75</h2>
-                <p class="historico-subtitulo">clientes satisfeitos!</p>
-                <p class="historico-descricao">Mais que projetos, entregamos idéias e estratégias que transformam vidas!</p>
-                
-            </div>
-            <div class="cards card-historico">
-                <h2 class="card-title historico-numero">+40</h2>
-                <p class="card-subtitulo historico-subtitulo">especialistas certificados</p>
-                <p class="card-descricao historico-descricao">Contamos com um time capacitado e multidiciplinar para te atender e desenvolver as melhores soluções para seu negócio!</p>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="quem-somos">
-        <div class="quem-somos-content">
-            <div class="quem-somos-img">
-                <img src="./assets/quemsomos-img.png" alt="Escritório InovaTech">
-            </div>
-            <div class="quem-somos-text">
-                <img src="./assets/quemsomos-title.svg">
-                <p>Nascemos com uma cultura vibrante e um time unido, focado em resolver desafios reais. Hoje, somos especialistas em transformar negócios através da tecnologia, mantendo o espírito de colaboração e inovação que nos trouxe até aqui.</p>
+        </section>
+        <footer>
+            
+        </footer>
+    </main>
     
-                <p> Conheça nossa história, nossa cultura de inovação e a equipe pronta para impulsionar seu projeto </p>
-                <a href="#" class="button button-principal"> Saiba Mais</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="servicos">
-        <div class="servicos-content">
-            <div class="servicos-text">
-                <h2 class="servicos-text-title">Do conceito à execução</h2>
-                <p>Entregamos projetos de tecnologia que geram impacto real e transformam os resultados do seu negócio!</p>
-                <p>Conheça nossos serviços!</p>
-            </div>
-            <div class="servicos-apresentacao">
-                <div class="cards card-servicos">
-                    <h2 class="card-title servicos-titulo">Consultoria Estratégica</h2>
-                    <p class="card-subtitulo servicos-subtitulo">Mais que análise, estratégia!</p>
-                    <p class="card-descricao servicos-descricao"> Mais do que análise, entregamos estratégia. Mapeamos as oportunidades do seu negócio e definimos o plano de ação exato para sua transformação digital e crescimento.</p>
-                </div>
-                <div class="cards card-servicos">
-                    <h2 class="card-title servicos-titulo">Concepção e Design</h2>
-                    <p class="card-subtitulo servicos-subtitulo>clientes satisfeitos!">Da ideia ao projeto!</p>
-                    <p class="card-descricao servicos-descricao"> Da ideia ao projeto. Desenhamos a arquitetura e a experiência do usuário da sua solução. Criamos produtos intuitivos focados em resolver problemas reais e engajar seus clientes.</p>
-                </div>
-                <div class="cards card-servicos">
-                    <h2 class="card-title servicos-titulo">Desenvolvimento de Software</h2>
-                    <p class="card-subtitulo servicos-subtitulo>clientes satisfeitos!">Do código ao resultado!</p>
-                    <p class="card-descricao servicos-descricao"> Damos vida ao seu projeto com tecnologia de ponta. Nossos especialistas desenvolvem softwares robustos, escaláveis e seguros, prontos para performar e impulsionar seus resultados.</p>
-                </div>
-                <a href="#" class="button button-principal"> Saiba Mais</a>
-            </div>
-        
-        </div>
-    </section>
-
-    <section id="parceiros">
-
-    </section>
-
-    <section id="contato" class="contato-content">
-
-
-    </section>
     <script src="main.js"></script>
 </body>
 </html>
