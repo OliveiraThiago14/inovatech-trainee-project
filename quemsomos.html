@@ -8,43 +8,37 @@
     <title>Quem Somos</title>
 </head>
 <body>
-      <header>
-        <div class="container">
-
-            <div class="logo">
-                <img src="inovatech-logo.svg" alt="InovaTech Logo">
-            </div>
-
-            <nav id="nav-barra">
-                <div class="menu-header">
-                    <div class="logo-menu">
-                        <img src="inovatech-logo-branca.svg" alt="InovaTech Logo">
-                    </div>
-
-                    <button id="btn-fechar">
-                        <i class="fa-solid fa-xmark"></i>
-                    </button>
-                </div>
-
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Quem somos</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Parceiros</a></li>
-                    <li><a href="#">Contatos</a></li>
-                </ul>
-            </nav>
-
-            <button id="menu-mobile">
-                <i class="fa-solid fa-bars"></i>
+       <header class="site-header">
+        <div class="header-content" id="header-content">
+            <button onclick="toggleSideBar()" class="btn_icon_header_hamb">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
             </button>
-
+            <div class="logo">
+                <a href="#" class="logo-link">
+                    <img src="./imagens/logo-inovatech.png" alt="Logo InovaTech">
+                </a>
+            </div>
+            <nav class="bar-navigation" id="bar-navigation">
+                <button onclick="toggleSideBar()" class="btn_icon_header_x">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                    </svg>
+                </button>
+                <a href="#preparado" class="nav-link">Inicio</a>
+                <a href="#quem-somos" class="nav-link">Quem somos?</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="#parceiros" class="nav-link">Parceiros</a>
+                <a href="#contato" class="nav-link">Contatos</a>
+            </nav>
         </div>
     </header>
 
     <main>
-        <h1>Nossa História</h1>
-        <h2>O Ponto de Partida (2017) </h2>
+        <h1>Quem Somos</h1>
+        <h2>Nossa História</h2>
+        <h3>O Ponto de Partida (2017) </h3>
         <p>Nossos fundadores vieram desses três mundos distintos:</p>
         <ul>
             <li>Juliana Miranda, nossa diretora de operações, cansou de ver relatórios de consultoria de milhões de reais virarem peso de papel. Ela sabia que a estratégia só tem valor quando é executável.</li>
@@ -52,19 +46,19 @@
             <li>Fernando Silva, nosso diretor de tecnologia, estava cansado de receber especificações vagas e de ter que "adivinhar" o que o cliente realmente precisava, muitas vezes refazendo o trabalho.</li>
         </ul>
         <p>Eles se encontraram em 2017, trabalhando (e sofrendo) no mesmo projeto complexo de transformação digital. Em meio ao caos, eles perceberam que não eram oponentes; eles eram as três peças que faltavam um ao outro. Naquele dia, a ideia da InovaTech nasceu: uma empresa onde estratégia, design e desenvolvimento não trabalhariam em sequência, mas em sintonia.</p>
-        <h2>A Fundação (2019)</h2>
+        <h3>A Fundação (2019)</h3>
         <p>Em 2019, a InovaTech abriu suas portas com uma filosofia radical: nenhum projeto começa sem que as três áreas estejam na mesma sala. Nossa abordagem não é linear, é um ciclo contínuo.</p>
         <ol>
             <li>Começamos pelo "Porquê" (Consultoria Estratégica): Não perguntamos ao cliente "O que você quer construir?". Perguntamos: "Qual problema de negócio você precisa resolver?". Mapeamos o mercado, validamos a oportunidade e desenhamos o roadmap.</li>
             <li>Definimos a Experiência (Concepção e Design): Com a estratégia clara, nosso time de design entra em cena. Eles não criam apenas telas; eles desenham a jornada do usuário. Prototipamos, testamos com usuários reais e iteramos até que a solução seja intuitiva, acessível e humana.</li>
             <li>Construímos com Excelência (Desenvolvimento de Software): Nossos engenheiros, que participaram do processo desde o Dia 1, não recebem um "manual". Eles entendem o objetivo de negócio. Isso lhes dá o contexto para construir uma arquitetura escalável, segura e flexível, usando a tecnologia certa para o trabalho.</li>
         </ol>
-        <h2>Onde estamos hoje</h2>
+        <h3>Onde estamos hoje</h3>
         <p>O que começou como uma sala com três pessoas e um quadro branco é hoje um estúdio digital vibrante, que já entregou mais de 50 projetos de transformação digital para empresas líderes em seus setores.</p>
         <p>De otimizar a logística de uma gigante do varejo a criar um aplicativo de saúde mental que realmente salva vidas, nosso portfólio é a prova de que nossa abordagem funciona. O resultado não é apenas um software funcional; é uma vantagem competitiva real para nossos clientes.</p>
-        <h1>Nossa Missão</h1>
+        <h2>Nossa Missão</h2>
         <p>Acreditamos que a tecnologia é a ferramenta mais poderosa para a mudança, mas ela é inútil sem um propósito claro e um design centrado no ser humano. Na InovaTech, não somos apenas seus fornecedores. Somos seus parceiros de ponta a ponta, desde a primeira pergunta estratégica até a última linha de código.<strong> Nossa missão é simples: transformar sua ambição em realidade digital.</strong></p>
-        <h1>Nossos Valores</h1>
+        <h2>Nossos Valores</h2>
     </main>
 
     <footer>
