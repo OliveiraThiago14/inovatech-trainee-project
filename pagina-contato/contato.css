@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -165,8 +165,10 @@ header .container {
 /*Nossa Direção*/
 .direcao {
     background-color: #D792EE;
-    padding: 38px 0;
+    padding: 48px 32px 30px 32px;
+    margin: auto 20px;
     text-align: center;
+    border-radius: 25px;
 }
 
 .direcao h2 {
@@ -198,6 +200,12 @@ header .container {
     max-width: 600px;
 }
 
+.card-perfil h3 {
+    color: white;
+    font-size: 32px;
+    margin-bottom:16px;
+}
+
 .card-perfil img {
     border-radius: 25px;
     width: 350px;
@@ -206,13 +214,7 @@ header .container {
     margin: 0 auto 16px auto;
 }
 
-.card-perfil h3 {
-    color: white;
-    font-size: 32px;
-    margin-bottom:16px;
-}
-
-.card-perfil span {
+.card-perfil .cargo {
     color: white;
     font-size: 24px;
     font-weight: bold;
@@ -220,7 +222,8 @@ header .container {
     margin-bottom: 10px;
 }
 
-.card-perfil p {
+.card-perfil .email {
     font-size: 14px;
     color: white;
+    text-decoration: underline;
 }
