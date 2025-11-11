@@ -8,13 +8,23 @@
 </head>
 <body>
     <header class="site-header">
-        <div class="header-content">
+        <div class="header-content" id="header-content">
+            <button onclick="toggleSideBar()" class="btn_icon_header_hamb">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="80" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </button>
             <div class="logo">
                 <a href="#" class="logo-link">
                     <img src="./assets/logo-inovatech.png" alt="Logo InovaTech">
                 </a>
             </div>
-            <nav class="bar-navigation">
+            <nav class="bar-navigation" id="bar-navigation">
+                <button onclick="toggleSideBar()" class="btn_icon_header_x">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="80" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                    </svg>
+                </button>
                 <a href="#" class="nav-link">Inicio</a>
                 <a href="#" class="nav-link">Quem somos?</a>
                 <a href="#" class="nav-link">Serviços</a>
@@ -34,7 +44,7 @@
             </div>
 
             <div class="img-preparado">
-                <img src="./assets/imagem-equipe-inovatech1.png" alt="Equipe InovaTech">
+                <img src="./assets/imagem-equipe-inovatech1.png" alt="Equipe InovaTech" weidth="627" height="294">
             </div>
 
         </div>
@@ -121,5 +131,6 @@
 
 
     </section>
+    <script src="main.js"></script>
 </body>
 </html>
