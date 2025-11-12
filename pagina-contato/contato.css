@@ -235,7 +235,7 @@ header .container {
 
 
 /* TABLET */
-@media (max-width: 992px) {  
+@media (max-width: 1380px) {  
     /* Barra de navegação */
     #nav-barra ul,
     #nav-barra li + li::before {
@@ -369,12 +369,16 @@ header .container {
 /* MOBILE */
 @media (max-width: 576px) {
     /* Barra de navegação */
-    .logo {
-        display: none;
+    header .container {
+        padding: 8px 20px;
     }
 
-    header .container {
-        justify-content: flex-end;
+    .logo img {
+        height: 40px;
+    }
+
+    #menu-mobile {
+        font-size: 32px;
     }
 
     /* Direção */
