@@ -508,3 +508,113 @@ body {
 .contato-formulario button:hover {
   background-color: #9333ea;
 }
+
+.inovatech-footer {
+    background-color: #9112BC;
+    color: #fff;
+    padding-top: 22px;
+    font-family: 'Unbounded', sans-serif;
+    font-weight: bold;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+
+.branding-contact {
+    text-align: center;
+}
+
+.logo-area {
+    margin-bottom: 30px;
+}
+
+.contact-title {
+    font-size: 38px; 
+    font-weight: bold;
+    margin: 40px 0 10px 0;
+}
+
+.contact-email {
+    font-family: 'lato';
+    font-weight: 300;
+    font-size: 28px;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-title {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    border-radius: 50%;
+}
+
+.nav-menu {
+    text-align: center; 
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin-bottom: 15px;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    color: #FF9966;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 50px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+@media (max-width: 834px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-column {
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    }
+
+    .branding-contact,
+    .nav-menu {
+        text-align: center;
+    }
+
+    .logo-area {
+        margin-bottom: 10px;
+    }
+}
