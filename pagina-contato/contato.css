@@ -77,6 +77,175 @@ header .container {
     display: none;
 }
 
+/*Nossa Direção*/
+.direcao {
+    background-color: #D792EE;
+    padding: 48px 32px 30px 32px;
+    margin: auto 20px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.direcao h2 {
+    color: #9112BC;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.direcao .subtitulo {
+    color: white;
+    font-size: 20px;
+    margin: 0 auto 48px auto;
+}
+
+.direcao-cards {
+    display: flex;
+    justify-content: center;
+    gap: 74px;
+
+    background-color: #9112BC;
+    padding: 40px;
+    border-radius: 25px;
+}
+
+.card-perfil {
+    background-color: #9112BC;
+    border-radius: 25px;
+    flex: 1;
+    max-width: 600px;
+}
+
+.card-perfil h3 {
+    color: white;
+    font-size: 32px;
+    margin-bottom:16px;
+}
+
+.card-perfil img {
+    border-radius: 25px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin: 0 auto 16px auto;
+}
+
+.card-perfil .cargo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card-perfil .email-diretor {
+    font-size: 14px;
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* Contato */
+
+/* Fale conosco */
+.contato {
+    margin: 20px;
+    padding: 100px 82px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.contato-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 200px;
+}
+
+.info {
+    flex: 1;
+    max-width: 50%;
+}
+
+.info h2 {
+    color: #9112BC;
+    font-size: 36px;
+    margin-bottom: 36px;
+}
+
+.info .info-p1,
+.info .info-p2 {
+    font-size: 24px;
+    color: black;
+}
+
+.info-p1 {
+    margin-bottom: 10px;
+}
+
+.info-p2 {
+    margin-bottom: 46px;
+}
+
+.info .email-empresa {
+    font-weight: 20px;
+}
+
+.info .email-empresa strong {
+    color: #9112BC;
+}
+
+.info .email-empresa a {
+    color: black;
+    font-weight: 500;
+}
+
+.info .email-empresa a:hover {
+    color: #FF9966;
+}
+
+/* Redes Sociais */
+.redes-sociais {
+    flex: 1;
+    max-width: 40%;
+}
+
+.redes-sociais h3 {
+    font-size: 24px;
+    color: #B545DB;
+    margin-bottom: 36px;
+}
+
+.icones {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+}
+
+.rede {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.rede img {
+    width: 85px;
+    height: 85px;
+}
+
+.rede a {
+    font-size: 14px;
+    color: #D792EE;
+    text-decoration: none;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.rede a:hover {
+    color: #9112BC;
+    text-decoration: underline;
+}
+
 @media (max-width: 1440px) {
     #nav-barra li + li::before {
         display: none;
@@ -160,70 +329,37 @@ header .container {
         align-items: center;
         padding: 20px;
     }
-}
 
-/*Nossa Direção*/
-.direcao {
-    background-color: #D792EE;
-    padding: 48px 32px 30px 32px;
-    margin: auto 20px;
-    text-align: center;
-    border-radius: 25px;
-}
+    /* Contato */
+    .contato {
+        padding: 20px;
+    }
+    
+    .contato-container {
+        flex-direction: column;
+        gap: 80px;
+    }
 
-.direcao h2 {
-    color: #9112BC;
-    font-size: 32px;
-    margin-bottom: 16px;
-}
+    .info,
+    .redes-sociais {
+        max-width: 100%;
+    }
 
-.direcao .subtitulo {
-    color: white;
-    font-size: 20px;
-    margin: 0 auto 48px auto;
-}
+    .info {
+        text-align: center;
+    }
 
-.direcao-cards {
-    display: flex;
-    justify-content: center;
-    gap: 74px;
+    .icones {
+        justify-content: space-around;
+        gap: 15px;
+    }
+    
+    .rede img {
+        width: 70px;
+        height: 70px;
+    }
 
-    background-color: #9112BC;
-    padding: 40px;
-    border-radius: 25px;
-}
-
-.card-perfil {
-    background-color: #9112BC;
-    border-radius: 25px;
-    flex: 1;
-    max-width: 600px;
-}
-
-.card-perfil h3 {
-    color: white;
-    font-size: 32px;
-    margin-bottom:16px;
-}
-
-.card-perfil img {
-    border-radius: 25px;
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    margin: 0 auto 16px auto;
-}
-
-.card-perfil .cargo {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.card-perfil .email {
-    font-size: 14px;
-    color: white;
-    text-decoration: underline;
+    .rede a {
+        font-size: 12px;
+    }
 }
