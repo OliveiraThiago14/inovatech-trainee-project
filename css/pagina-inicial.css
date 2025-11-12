@@ -958,6 +958,7 @@ a{
     width: 472px;
 }
 
+
 .contato-content {
     display: flex;
     flex-direction: row;
@@ -965,17 +966,14 @@ a{
     justify-content: center;
     gap: 60px;
     padding: 60px;
-    width: 100vm;
+    width: 100vw;
     margin: 0 auto;
-    background: linear-gradient(0deg, rgba(175, 38, 221, 0.40) 0%, rgba(175, 38, 221, 0.40) 100%), url(./assets/secao-contato-img.png) lightgray 50% / cover no-repeat;
+    background: linear-gradient(0deg, rgba(175, 38, 221, 0.40) 0%, rgba(175, 38, 221, 0.40) 100%), url(../assets/imagens-parceiros/secao-contato-img.png) lightgray 50% / cover no-repeat;
     background-size: cover;
     background-position: center;
     color: white;
     border-radius: 0;
 }
-
-
-
 
 .contato-img-box img {
     width: 550px;
