@@ -17,6 +17,7 @@ body {
     padding: 20px;
 }
 
+/*
 header {
     padding: 20px;
 
@@ -76,15 +77,291 @@ header .container {
 #menu-mobile {
     display: none;
 }
+*/
 
-/*Nossa Direção*/
+/* Barra de Navegação */
+header {
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px #917a96;
+    
+    padding: 14px 48px;
+    
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 60px;
+}
+
+#nav-barra ul {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+#nav-barra a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+    
+    white-space: nowrap;
+}
+
+#nav-barra a:hover {
+    color: #FF9966;
+}
+
+#nav-barra li + li::before {
+    content: '|';
+    color: #ccc;
+    margin-right: 28px;
+}
+
+#menu-mobile,
+#nav-barra .menu-header {
+    display: none;
+}
+
+
+/* Direção */
+.direcao {
+    /* (Cor do seu design) */
+    background-color: #D792EE; 
+    padding: 48px 32px;
+    margin: auto 20px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.direcao h2 {
+    color: #9112BC;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.direcao .subtitulo {
+    color: white;
+    font-size: 20px;
+    margin: 0 auto 48px auto;
+}
+
+/* O container roxo escuro (Desktop) */
+.direcao-cards {
+    display: flex;
+    justify-content: center;
+    gap: 74px;
+    
+    background-color: #9112BC;
+    padding: 40px;
+    border-radius: 25px;
+}
+
+.card-perfil {
+    background-color: #9112BC;
+    border-radius: 25px;
+    flex: 1;
+    max-width: 600px;
+}
+
+.card-perfil h3 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.card-perfil img {
+    border-radius: 25px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin: 0 auto 16px auto;
+}
+
+.card-perfil .cargo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card-perfil .email-diretor {
+    font-size: 14px;
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* TABLET */
+@media (max-width: 992px) {  
+    /* Barra de navegação */
+    #nav-barra ul,
+    #nav-barra li + li::before {
+        display: none;
+    }
+
+    #menu-mobile {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 46px;
+        color: #9112BC;
+        cursor: pointer;
+    }
+
+    #nav-barra {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #9112BC;
+        
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        visibility: hidden;
+        
+        display: flex;
+        flex-direction: column;
+        
+        padding: 20px 24px;
+        box-sizing: border-box;
+    }
+
+    #nav-barra.ativo {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    #nav-barra ul {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+        gap: 28px;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    #nav-barra a {
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    #nav-barra a:hover {
+        color: #FF9966;
+    }
+
+    #nav-barra .menu-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    #nav-barra .logo-menu img {
+        height: 60px;
+    }
+
+    #btn-fechar {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 48px;
+        cursor: pointer;
+    }
+
+    /* Direção */
+    .direcao-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .card-perfil {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .card-perfil img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+    /* Barra de navegação */
+    .logo {
+        display: none;
+    }
+
+    header .container {
+        justify-content: flex-end;
+    }
+
+    /* Direção */
+    .direcao {
+        padding: 30px 0px;
+        margin: 10px 0;
+    }
+    
+    .direcao-cards {
+        flex-direction: row; 
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        
+        padding: 20px;
+
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none; /* Firefox */
+    }
+    
+    .direcao-cards::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
+
+    .card-perfil {
+        width: 100%;
+        min-width: 260px;
+        max-width: 100%;
+    }
+    
+    .direcao h2 { font-size: 28px; }
+    .direcao .subtitulo { font-size: 20px; }
+    .card-perfil h3 { font-size: 24px; }
+    .card-perfil .cargo { font-size: 18px; }
+    .card-perfil .email-diretor {font-size: 12px;}
+}
+
+
+
+
+
+/* 
 .direcao {
     background-color: #D792EE;
     padding: 48px 32px 30px 32px;
     margin: auto 20px;
     text-align: center;
     border-radius: 25px;
-}
+} 
 
 .direcao h2 {
     color: #9112BC;
@@ -144,9 +421,9 @@ header .container {
 }
 
 
-/* Contato */
 
-/* Fale conosco */
+
+
 .contato {
     margin: 20px;
     padding: 100px 82px;
@@ -203,7 +480,7 @@ header .container {
     color: #FF9966;
 }
 
-/* Redes Sociais */
+
 .redes-sociais {
     flex: 1;
     max-width: 40%;
@@ -323,14 +600,14 @@ header .container {
         color: #FF9966;
     }
 
-    /*Nossa Direção*/
+
     .direcao-cards {
         flex-direction: column;
         align-items: center;
         padding: 20px;
     }
 
-    /* Contato */
+
     .contato {
         padding: 20px;
     }
@@ -363,3 +640,5 @@ header .container {
         font-size: 12px;
     }
 }
+
+*/
