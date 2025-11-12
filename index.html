@@ -7,30 +7,37 @@
     <title>InovaTech - Technology Solutions</title>
 </head>
 <body>
-    <header class="site-header">
-        <div class="header-content" id="header-content">
-            <button onclick="toggleSideBar()" class="btn_icon_header_hamb">
-                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                </svg>
-            </button>
+    <header>
+        <div class="container">
+
             <div class="logo">
-                <a href="#" class="logo-link">
-                    <img src="./assets/logo-inovatech.png" alt="Logo InovaTech">
-                </a>
+                <img src="../imagens/inovatech-logo.svg" alt="InovaTech Logo">
             </div>
-            <nav class="bar-navigation" id="bar-navigation">
-                <button onclick="toggleSideBar()" class="btn_icon_header_x">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-                    </svg>
-                </button>
-                <a href="#preparado" class="nav-link">Inicio</a>
-                <a href="#quem-somos" class="nav-link">Quem somos?</a>
-                <a href="#servicos" class="nav-link">Serviços</a>
-                <a href="#parceiros" class="nav-link">Parceiros</a>
-                <a href="#contato" class="nav-link">Contatos</a>
+
+            <nav id="nav-barra">
+                <div class="menu-header">
+                    <div class="logo-menu">
+                        <img src="../imagens/inovatech-logo-branca.svg" alt="InovaTech Logo">
+                    </div>
+
+                    <button id="btn-fechar">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Parceiros</a></li>
+                    <li><a href="#">Contatos</a></li>
+                </ul>
             </nav>
+
+            <button id="menu-mobile">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
         </div>
     </header>
 
@@ -190,42 +197,49 @@
             </div>
         </section>
 
-        <footer class="inovatech-footer">
-            <div class="footer-content">
-                <div class="footer-column branding-contact">
-                    <div class="footer logo">
-                        <img src="./assets/logo-inovatech.png" alt="Logo InovaTech">
+        <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col" id="footer-logo-contato">
+                    <div class="logo-footer">
+                        <img src="../imagens/inovatech-logo-branca.svg" alt="InovaTech Logo" class="logo-footer-img">
                     </div>
-                    <p class="contact-title">Contatos</p>
-                    <p class="contact-email">inovatech@gmail.com</p>
-                </div>
-
-                <div class="footer-column social-media">
-                    <p class="social-title">Acesse nossas redes sociais</p>
-                    <div class="social-icons">
-                        <img src="./assets/icons8-instagram.svg">
-                        <img src="./assets/icons8-linkedin.svg">
-                        <img src="./assets/icons8-whatsapp.svg">
+                    <div class="contato-footer">
+                        <strong>Contatos</strong>
+                        <p>contato@inovatech.com.br</p>
                     </div>
                 </div>
 
-                <div class="footer-column nav-menu">
-                    <ul>
-                        <li><a href="#">Início</a></li>
-                        <li><a href="#">Quem Somos</a></li>
-                        <li><a href="#">Serviços</a></li>
-                        <li><a href="#">Parceiros</a></li>
-                        <li><a href="#">Contatos</a></li>
-                    </ul>
+                <div class="footer-col" id="footer-redes">
+                    <strong>Acesse nossas redes sociais</strong>
+                    <div class="footer-icones">
+                        <a href="#" target="_blank"><img src="imagens-contato/insta-icon.svg"
+                                alt="Instagram"></a>
+                        <a href="#" target="_blank"><img src="imagens-contato/linkedin-icon.svg"
+                                alt="LinkedIn"></a>
+                        <a href="#" target="_blank"><img src="imagens-contato/whatsapp-icon.svg"
+                                alt="WhatsApp"></a>
+                    </div>
                 </div>
 
-            </div>
+                <div class="footer-col" id="footer-nav">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Início</a></li>
+                            <li><a href="#">Quem Somos</a></li>
+                            <li><a href="#">Serviços</a></li>
+                            <li><a href="#">Parceiros</a></li>
+                            <li><a href="#">Contatos</a></li>
+                        </ul>
+                    </nav>
+                </div>
 
-            <div class="footer-bottom">
-                <p>Este sistema foi criado como parte do nosso Processo Trainee. | 2025 Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-bottom">
+                    <p>Este sistema foi criado como parte do nosso Processo Trainee. | 2025 Todos os direitos reservados.
+                    </p>
+                </div>
             </div>
-            </div>
-
         </footer>
     </main>
     

@@ -13,105 +13,163 @@
   <link rel="stylesheet" href="global.css">
   <style id="sections-styles">
 /* CSS for section section:Header */
-.site-header-wrapper {
-        padding-top: 21px;
-        padding-bottom: 21px;
+header {
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px #917a96;
+
+    padding: 14px 48px;
+
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 60px;
+}
+
+#nav-barra ul {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+#nav-barra a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px;
+
+    white-space: nowrap;
+}
+
+#nav-barra a:hover {
+    color: #FF9966;
+}
+
+#nav-barra li+li::before {
+    content: '|';
+    color: #ccc;
+    margin-right: 28px;
+}
+
+#menu-mobile,
+#nav-barra .menu-header {
+    display: none;
+}
+
+@media (max-width: 1380px) {
+
+    /* Barra de navegação */
+    #nav-barra ul,
+    #nav-barra li+li::before {
+        display: none;
     }
-    .site-header {
-        background-color: var(--white);
-        border-radius: 25px;
-        box-shadow: 0px 4px 25.8px 3px rgba(0, 0, 0, 0.25);
-        padding: 14px 48px;
+
+    #menu-mobile {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 46px;
+        color: #9112BC;
+        cursor: pointer;
+    }
+
+    #nav-barra {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #9112BC;
+
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 20px 24px;
+        box-sizing: border-box;
+    }
+
+    #nav-barra.ativo {
+        transform: translateX(0);
+        visibility: visible;
+    }
+
+    #nav-barra ul {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+        gap: 28px;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    #nav-barra a {
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    #nav-barra a:hover {
+        color: #FF9966;
+    }
+
+    #nav-barra .menu-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 60px;
     }
-    .logo {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        text-decoration: none;
+
+    #nav-barra .logo-menu img {
+        height: 60px;
     }
-    .logo-icon {
-        width: 71px;
-        height: 84px;
-    }
-    .logo-text-container {
-        display: flex;
-        flex-direction: column;
-    }
-    .logo-text {
-        font-family: 'Unbounded', sans-serif;
-        font-weight: 400;
-        font-size: 32px;
-        color: var(--black);
-    }
-    .logo-subtitle {
-        font-family: 'SeoulNamsan CL', sans-serif;
-        font-size: 24px;
-        color: var(--black);
-        margin-top: -4px;
-    }
-    .main-nav ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        align-items: center;
-        gap: 28px;
-        flex-wrap: wrap;
-    }
-    .main-nav li {
-        display: flex;
-        align-items: center;
-        gap: 28px;
-    }
-    .main-nav li:not(:first-child)::before {
-        content: '';
+
+    #btn-fechar {
         display: block;
-        width: 1px;
-        height: 20px;
-        background-color: var(--black);
+        background: none;
+        border: none;
+        color: white;
+        font-size: 48px;
+        cursor: pointer;
     }
-    .main-nav a {
-        font-family: 'Unbounded', sans-serif;
-        font-weight: 700;
-        font-size: 20px;
-        color: var(--black);
-        text-decoration: none;
-        transition: color 0.3s;
+}
+
+@media screen and (max-width: 480px) {
+    /* Barra de navegação */
+    header .container {
+        padding: 8px 20px;
     }
-    .main-nav a:hover {
-        color: var(--primary-purple);
+
+    .logo img {
+        height: 40px;
     }
-    @media (max-width: 1200px) {
-        .site-header {
-            flex-direction: column;
-            gap: 20px;
-            padding: 20px;
-        }
-        .main-nav ul {
-            justify-content: center;
-        }
+
+    #menu-mobile {
+        font-size: 32px;
     }
-    @media (max-width: 768px) {
-        .logo-text {
-            font-size: 24px;
-        }
-        .logo-subtitle {
-            font-size: 18px;
-        }
-        .main-nav ul {
-            gap: 15px;
-        }
-        .main-nav li {
-            gap: 15px;
-        }
-        .main-nav a {
-            font-size: 16px;
-        }
-    }
+}
+
+@keyframes showSideBar {
+    from{margin-left: -100vw;}
+    top{margin-left: -15vw;}
+}
+
 
 /* CSS for section section:Hero */
 .hero-section {
@@ -456,162 +514,191 @@
     }
 
 /* CSS for section section:Footer */
-.site-footer-wrapper {
-        background-color: var(--primary-purple);
-        border-radius: 25px;
-        box-shadow: 4px 7px 25px 3px rgba(0, 0, 0, 0.4);
-        padding: 12px 40px 10px;
-        margin-top: 64px;
+    .footer {
+        background-color: #9112BC;
+        color: white;
+        padding: 32px 0;
+        margin: 20px;
+
+        border-radius: 20px;
     }
-    .footer-main {
+
+    .footer-container {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        gap: 40px;
-        padding: 10px 15px;
-        flex-wrap: wrap;
+        padding-bottom: 40px;
+        
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     }
+
     .footer-col {
-        display: flex;
-        flex-direction: column;
+        flex: 1;
     }
-    .footer-logo-contact {
-        gap: 46px;
+
+    .logo-footer {
+        margin-bottom: 20px;
     }
-    .footer-logo .logo-icon { width: 100.5px; height: 91px; }
-    .footer-logo .logo-text { font-size: 51.4px; }
-    .footer-logo .logo-subtitle { font-size: 28.5px; }
-    .footer-contact-info {
-        display: flex;
-        flex-direction: column;
-        gap: 19px;
-        text-align: center;
+
+    .logo-footer-img {
+        height: 60px;
     }
-    .footer-heading {
-        margin: 0;
-        color: var(--background-light);
-        font-size: 38.5px;
-        font-weight: 700;
-    }
-    .footer-email {
-        font-family: 'Lato', sans-serif;
+
+    .contato-footer strong {
         font-size: 32px;
-        color: var(--background-light);
-        text-decoration: none;
-    }
-    .footer-social {
-        align-items: center;
-        gap: 13px;
-    }
-    .footer-heading-light {
-        margin: 0;
-        color: var(--white);
-        font-size: 20px;
-        font-weight: 700;
-        text-align: center;
-        border-bottom: 3px solid var(--black);
-        padding-bottom: 13px;
-        width: 100%;
-    }
-    .social-icons {
-        display: flex;
-        gap: 40px;
-        padding-top: 13px;
-    }
-    .social-icon-link {
-        position: relative;
-        width: 100px;
-        height: 100px;
         display: block;
+        margin-bottom: 5px;
     }
-    .social-icon-link .social-bg,
-    .social-icon-link .social-icon {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+    .contato-footer p {
+        font-size: 20px;
     }
-    .social-icon-link .social-icon {
-        padding: 10px; /* Adjust as needed */
-        object-fit: contain;
-    }
-    .footer-nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        gap: 34px;
-    }
-    .footer-nav a {
-        color: var(--white);
-        font-size: 28px;
-        font-weight: 700;
-        text-decoration: none;
-    }
-    .footer-bottom {
-        border-top: 2px solid var(--black);
-        margin-top: 19px;
-        padding-top: 19px;
+
+    #footer-redes {
         text-align: center;
-        color: var(--white);
-        font-size: 12px;
-        font-weight: 700;
     }
-    .footer-bottom p {
-        margin: 0;
+    #footer-redes strong {
+        font-size: 20px;
+        display: block;
+        margin-bottom: 15px;
+        
+        padding-bottom: 5px;
+        border-bottom: 2px solid white;
+        display: inline-block;
     }
-    @media (max-width: 1280px) {
-        .footer-main {
+    .footer-icones {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+    .footer-icones img {
+        width: 75px;
+        height: 75px;
+        transition: transform 0.3s;
+    }
+    .footer-icones img:hover {
+        transform: scale(1.1);
+    }
+
+    #footer-nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+    #footer-nav ul {
+        list-style: none;
+        text-align: right;
+    }
+    #footer-nav li {
+        margin-bottom: 18px;
+    }
+    #footer-nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #footer-nav a:hover {
+        text-decoration: underline;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding-top: 30px;
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    @media (max-width: 834px) {
+        
+        /* Footer */
+        .footer {
+            padding: 40px 20px 20px 20px;
+            border-radius: 25px;
+        }
+
+        .footer-container {
             flex-direction: column;
             align-items: center;
             text-align: center;
-            gap: 50px;
+            gap: 30px;
+            border-bottom: none;
+            padding-bottom: 0;
         }
-        .footer-social {
-            width: 100%;
+
+        .contato-footer p {
+            word-break: break-all;
         }
-        .footer-nav ul {
-            flex-direction: row;
-            flex-wrap: wrap;
+        
+        #footer-nav {
             justify-content: center;
         }
+        #footer-nav ul {
+            text-align: center;
+        }
+        
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+        }
     }
-    @media (max-width: 768px) {
-        .footer-logo .logo-text { font-size: 36px; }
-        .footer-logo .logo-subtitle { font-size: 20px; }
-        .footer-heading { font-size: 28px; }
-        .footer-email { font-size: 22px; }
-        .footer-nav a { font-size: 20px; }
-        .footer-bottom { font-size: 10px; }
+
+    @media (max-width: 576px){
+        .logo-footer-img {
+            height: 50px;
+        }
+        .contato-footer strong { 
+            font-size: 20px; 
+        }
+        
+        .footer-icones img {
+            width: 40px;
+            height: 40px;
+        }
+        
+        #footer-nav a { 
+            font-size: 18px; 
+        }
+        
+        .footer-bottom {
+            font-size: 12px;
+        }
     }
   </style>
   <script src="global.js" defer></script>
 </head>
 <body>
-<header class="site-header-wrapper">
-    <div id="top" class="container">
-        <div class="site-header">
-            <a href="#" class="logo">
-                <img src="images/I120_212_75_29_71_33.svg" alt="InovaTech Logo Icon" class="logo-icon">
-                <div class="logo-text-container">
-                    <span class="logo-text">Inova<span class="gradient-text">Tech</span></span>
-                    <span class="logo-subtitle">Technology Solutions</span>
+    <header>
+        <div class="container">
+
+            <div class="logo">
+                <img src="../imagens/inovatech-logo.svg" alt="InovaTech Logo">
+            </div>
+
+            <nav id="nav-barra">
+                <div class="menu-header">
+                    <div class="logo-menu">
+                        <img src="../imagens/inovatech-logo-branca.svg" alt="InovaTech Logo">
+                    </div>
+
+                    <button id="btn-fechar">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
                 </div>
-            </a>
-            <nav class="main-nav">
+
                 <ul>
-                    <li><a href="#hero">Início</a></li>
-                    <li><a href="#">Quem Somos</a></li>
-                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Serviços</a></li>
                     <li><a href="#">Parceiros</a></li>
-                    <li><a href="#contact">Contatos</a></li>
+                    <li><a href="#">Contatos</a></li>
                 </ul>
             </nav>
+
+            <button id="menu-mobile">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
         </div>
-    </div>
-</header>
+    </header>
 <section id="hero" class="hero-section container">
     <h1 class="hero-title">Nossos Serviços</h1>
     <div class="hero-content">
@@ -696,56 +783,49 @@
         <img src="images/376_844.svg" alt="Back to top">
     </a>
 </section>
-<footer class="site-footer-wrapper">
-    <div class="container">
-        <div class="footer-main">
-            <div class="footer-col footer-logo-contact">
-                <a href="#" class="logo footer-logo">
-                    <img src="images/I351_1196_316_625_316_592_71_33.svg" alt="InovaTech Logo Icon" class="logo-icon">
-                    <div class="logo-text-container">
-                        <span class="logo-text">Inova<span class="gradient-text">Tech</span></span>
-                        <span class="logo-subtitle">Technology Solutions</span>
+<footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col" id="footer-logo-contato">
+                    <div class="logo-footer">
+                        <img src="../imagens/inovatech-logo-branca.svg" alt="InovaTech Logo" class="logo-footer-img">
                     </div>
-                </a>
-                <div class="footer-contact-info">
-                    <h3 class="footer-heading">Contatos</h3>
-                    <a href="mailto:Inovatech@gmail.com" class="footer-email">Inovatech@gmail.com</a>
+                    <div class="contato-footer">
+                        <strong>Contatos</strong>
+                        <p>contato@inovatech.com.br</p>
+                    </div>
+                </div>
+
+                <div class="footer-col" id="footer-redes">
+                    <strong>Acesse nossas redes sociais</strong>
+                    <div class="footer-icones">
+                        <a href="#" target="_blank"><img src="imagens-contato/insta-icon.svg"
+                                alt="Instagram"></a>
+                        <a href="#" target="_blank"><img src="imagens-contato/linkedin-icon.svg"
+                                alt="LinkedIn"></a>
+                        <a href="#" target="_blank"><img src="imagens-contato/whatsapp-icon.svg"
+                                alt="WhatsApp"></a>
+                    </div>
+                </div>
+
+                <div class="footer-col" id="footer-nav">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Início</a></li>
+                            <li><a href="#">Quem Somos</a></li>
+                            <li><a href="#">Serviços</a></li>
+                            <li><a href="#">Parceiros</a></li>
+                            <li><a href="#">Contatos</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                </div>
+                <div class="footer-bottom">
+                    <p>Este sistema foi criado como parte do nosso Processo Trainee. | 2025 Todos os direitos reservados.
+                    </p>
                 </div>
             </div>
-            <div class="footer-col footer-social">
-                <h3 class="footer-heading-light">Acesse nossas redes sociais</h3>
-                <div class="social-icons">
-                    <!--merged image-->
-                    <a href="#" class="social-icon-link">
-                        <img src="images/I351_1196_316_625_620_1815_390_835.svg" alt="Instagram background" class="social-bg">
-                        <img src="images/7f5b3e909c93c2feda363a3958d7e4a616fd33dd.png" alt="Instagram" class="social-icon">
-                    </a>
-                    <!--merged image-->
-                    <a href="#" class="social-icon-link">
-                        <img src="images/I351_1196_316_625_620_1816_390_839.svg" alt="LinkedIn background" class="social-bg">
-                        <img src="images/01bd92eb06873bdc30b1cb5f9c78b1ef5a9559d4.png" alt="LinkedIn" class="social-icon">
-                    </a>
-                    <!--merged image-->
-                    <a href="#" class="social-icon-link">
-                        <img src="images/I351_1196_316_625_620_1817_390_838.svg" alt="WhatsApp background" class="social-bg">
-                        <img src="images/15599b39c59c8e12b07e5f43a10b484cf3cce3aa.png" alt="WhatsApp" class="social-icon">
-                    </a>
-                </div>
-            </div>
-            <nav class="footer-col footer-nav">
-                <ul>
-                    <li><a href="#hero">Início</a></li>
-                    <li><a href="#">Quem Somos</a></li>
-                    <li><a href="#services">Serviços</a></li>
-                    <li><a href="#">Parceiros</a></li>
-                    <li><a href="#contact">Contatos</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="footer-bottom">
-            <p>Este sistema foi criado como parte do nosso Processo Trainee. | 2025 Todos os direitos reservados.</p>
-        </div>
-    </div>
-</footer>
+        </footer>
 </body>
 </html>
