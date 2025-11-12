@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="contato.css">
+
+    <title>Contatos</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+
+            <div class="logo">
+                <img src="../imagens/inovatech-logo.svg" alt="InovaTech Logo">
+            </div>
+
+            <nav id="nav-barra">
+                <div class="menu-header">
+                    <div class="logo-menu">
+                        <img src="../imagens/inovatech-logo-branca.svg" alt="InovaTech Logo">
+                    </div>
+
+                    <button id="btn-fechar">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Parceiros</a></li>
+                    <li><a href="#">Contatos</a></li>
+                </ul>
+            </nav>
+
+            <button id="menu-mobile">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="direcao">
+            <div class="container">
+                <h2>Conheça a nossa direção</h2>
+                <p class="subtitulo">Profissionais que lideram a InovaTech com experiência, inovação e compromisso com o
+                    futuro.</p>
+
+                <div class="direcao-cards">
+                    <div class="card-perfil">
+                        <h3>Marcos Souza</h3>
+                        <img src="imagens-contato/diretor-executivo.jpg" alt="Foto do Diretor Executivo, Marcos Souza">
+                        <p class="cargo">Diretor Executivo</p>
+                        <p class="email-diretor">marcos.souza@invovatech.com.br</p>
+                    </div>
+
+                    <div class="card-perfil">
+                        <h3>Juliana Miranda</h3>
+                        <img src="imagens-contato/diretora-operacoes.jpg"
+                            alt="Foto da Diretora de Operações, Juliana Miranda">
+                        <p class="cargo">Diretora de Operações</p>
+                        <p class="email-diretor">juliana.miranda@invovatech.com.br</p>
+                    </div>
+
+                    <div class="card-perfil">
+                        <h3>Fernando Silva</h3>
+                        <img src="imagens-contato/diretor-tec.jpg" alt="Foto do Diretor de Tecnologia, Fernando Silva">
+                        <p class="cargo">Diretor de Tecnologia</p>
+                        <p class="email-diretor">fernando.silva@invovatech.com.br</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contato">
+            <div class="container">
+                <div class="contato-container">
+                    <div class="info">
+                        <h2>Fale conosco!</h2>
+                        <p class="info-p1">Estamos prontos para te ajudar!</p>
+                        <p class="info-p2">Fale com a InovaTech e veja como podemos impulsionar inovação e resultados
+                            juntos.</p>
+                        <p class="email-empresa">
+                            <strong>Email:</strong>
+                            <a href="#">contato@inovatech.com.br</a>
+                        </p>
+                    </div>
+
+                    <div class="redes-sociais">
+                        <h3>Nossas redes sociais</h3>
+
+                        <div class="icones">
+                            <div class="rede">
+                                <img src="imagens-contato/linkedin-icon.svg" alt="ícone do Linkedin">
+                                <a href="#" target="_blank">InovaTech</a>
+                            </div>
+
+                            <div class="rede">
+                                <img src="imagens-contato/whatsapp-icon.svg" alt="Ícone do Whatsapp">
+                                <a href="#" target="_blank">(61) 1234-5555</a>
+                            </div>
+
+                            <div class="rede">
+                                <img src="imagens-contato/insta-icon.svg" alt="Ícone do Instagram">
+                                <a href="#" target="_blank">@inovatech</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="formulario-contato">
+            <div class="container">
+
+                <div class="form-container">
+
+                    <div class="form-img">
+                        <img src="imagens-contato/pessoas-trabalhando.svg" alt="Equipe trabalhando em computadores">
+                    </div>
+
+                    <div class="form-conteudo">
+                        <h3>Entre em contato conosco!</h3>
+
+                        <form action="#">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="nome">Qual seu nome?</label>
+                                    <input type="text" id="nome" name="nome" placeholder="Insira seu nome">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Qual seu e-mail?</label>
+                                    <input type="email" id="email" name="email" placeholder="Insira seu e-mail">
+                                </div>
+                                <div class="form-group">
+                                    <label for="conheceu">Por onde nos conheceu?</label>
+                                    <input type="text" id="conheceu" name="conheceu"
+                                        placeholder="Insira onde nos conheceu">
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefone">Qual seu telefone de contato?</label>
+                                    <input type="tel" id="telefone" name="telefone" placeholder="Insira seu telefone">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem:</label>
+                                <textarea id="mensagem" name="mensagem" rows="4"
+                                    placeholder="Insira sua mensagem"></textarea>
+                            </div>
+
+                            <div class="enviar-container">
+                                <button type="submit" class="btn-enviar">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col" id="footer-logo-contato">
+                    <div class="logo-footer">
+                        <img src="../imagens/inovatech-logo-branca.svg" alt="InovaTech Logo" class="logo-footer-img">
+                    </div>
+                    <div class="contato-footer">
+                        <strong>Contatos</strong>
+                        <p>contato@inovatech.com.br</p>
+                    </div>
+                </div>
+
+                <div class="footer-col" id="footer-redes">
+                    <strong>Acesse nossas redes sociais</strong>
+                    <div class="footer-icones">
+                        <a href="#" target="_blank"><img src="imagens-contato/insta-icon.svg"
+                                alt="Instagram"></a>
+                        <a href="#" target="_blank"><img src="imagens-contato/linkedin-icon.svg"
+                                alt="LinkedIn"></a>
+                        <a href="#" target="_blank"><img src="imagens-contato/whatsapp-icon.svg"
+                                alt="WhatsApp"></a>
+                    </div>
+                </div>
+
+                <div class="footer-col" id="footer-nav">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Início</a></li>
+                            <li><a href="#">Quem Somos</a></li>
+                            <li><a href="#">Serviços</a></li>
+                            <li><a href="#">Parceiros</a></li>
+                            <li><a href="#">Contatos</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>Este sistema foi criado como parte do nosso Processo Trainee. | 2025 Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="contato.js"></script>
+</body>
+
+</html>
