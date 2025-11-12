@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InovaTech - Technology Solutions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&family=Lato:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:Header */
+.site-header-wrapper {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+    .site-header {
+        background-color: var(--white);
+        border-radius: 25px;
+        box-shadow: 0px 4px 25.8px 3px rgba(0, 0, 0, 0.25);
+        padding: 14px 48px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        text-decoration: none;
+    }
+    .logo-icon {
+        width: 71px;
+        height: 84px;
+    }
+    .logo-text-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo-text {
+        font-family: 'Unbounded', sans-serif;
+        font-weight: 400;
+        font-size: 32px;
+        color: var(--black);
+    }
+    .logo-subtitle {
+        font-family: 'SeoulNamsan CL', sans-serif;
+        font-size: 24px;
+        color: var(--black);
+        margin-top: -4px;
+    }
+    .main-nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        flex-wrap: wrap;
+    }
+    .main-nav li {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+    }
+    .main-nav li:not(:first-child)::before {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 20px;
+        background-color: var(--black);
+    }
+    .main-nav a {
+        font-family: 'Unbounded', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: var(--black);
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    .main-nav a:hover {
+        color: var(--primary-purple);
+    }
+    @media (max-width: 1200px) {
+        .site-header {
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+        .main-nav ul {
+            justify-content: center;
+        }
+    }
+    @media (max-width: 768px) {
+        .logo-text {
+            font-size: 24px;
+        }
+        .logo-subtitle {
+            font-size: 18px;
+        }
+        .main-nav ul {
+            gap: 15px;
+        }
+        .main-nav li {
+            gap: 15px;
+        }
+        .main-nav a {
+            font-size: 16px;
+        }
+    }
+
+/* CSS for section section:Hero */
+.hero-section {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+    .hero-title {
+        margin: 0;
+        color: var(--primary-purple);
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 1.2;
+    }
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        text-align: left;
+    }
+    .hero-subtitle {
+        margin: 0;
+        color: var(--primary-purple);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+    }
+    .hero-description {
+        margin: 0;
+        color: var(--primary-purple);
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1.2;
+    }
+    .hero-cta {
+        margin: 0;
+        color: var(--black);
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    @media (max-width: 768px) {
+        .hero-title {
+            font-size: 48px;
+        }
+        .hero-subtitle {
+            font-size: 28px;
+        }
+        .hero-description {
+            font-size: 18px;
+        }
+        .hero-cta {
+            font-size: 16px;
+        }
+    }
+
+/* CSS for section section:Services */
+.services-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+    }
+    .service-card {
+        width: 800px;
+        max-width: 100%;
+        height: 200px;
+        border-radius: 16px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+    }
+    .service-card h3 {
+        margin: 0;
+        color: var(--white);
+        font-weight: 700;
+        font-size: 32px;
+        text-align: center;
+        text-shadow: var(--text-shadow);
+    }
+    .service-card.card-1 {
+        background-image: url('images/50f891cce15e81feabde01ae61cb970a2f02aa70.png');
+    }
+    .service-card.card-1 h3 {
+        font-size: 27.5px;
+    }
+    .service-card.card-2 {
+        background-image: url('images/73d7d158f487969ca80a3aa9a56de97a96ec4f66.png');
+    }
+    .service-card.card-3 {
+        background-image: url('images/8bfa888cc4a8409f1bb6d562bcb85398aa6a6297.png');
+    }
+    @media (max-width: 900px) {
+        .service-card {
+            width: 100%;
+            height: 150px;
+        }
+        .service-card h3 {
+            font-size: 24px;
+        }
+    }
+
+/* CSS for section section:Testimonials */
+.testimonials-section {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+    .testimonials-title {
+        margin: 0;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        color: var(--black);
+    }
+    .testimonials-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .testimonials-carousel {
+        display: flex;
+        gap: 24px;
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 20px;
+    }
+    .testimonial-card {
+        flex: 0 0 424px;
+        max-width: 100%;
+        background-color: var(--primary-purple);
+        border-radius: 16px;
+        box-shadow: 5px 7px 25px 0px rgba(0, 0, 0, 0.4);
+        padding: 34px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        color: var(--white);
+        height: 410px;
+    }
+    .testimonial-card blockquote {
+        margin: 0;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.25;
+        text-shadow: var(--text-shadow);
+    }
+    .testimonial-card cite {
+        font-family: 'Lato', sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        font-style: normal;
+    }
+    .testimonial-nav {
+        display: flex;
+        gap: 24px;
+    }
+    .nav-arrow {
+        width: 88px;
+        height: 88px;
+        background-color: var(--light-purple);
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s;
+    }
+    .nav-arrow:hover {
+        background-color: var(--primary-purple);
+    }
+    .nav-arrow.left img {
+        transform: rotate(180deg);
+    }
+    @media (max-width: 1400px) {
+        .testimonials-carousel {
+            justify-content: flex-start;
+        }
+    }
+    @media (max-width: 768px) {
+        .testimonials-title {
+            font-size: 28px;
+        }
+        .testimonial-card {
+            flex-basis: 90%;
+            height: auto;
+            min-height: 350px;
+        }
+        .testimonial-card blockquote, .testimonial-card cite {
+            font-size: 20px;
+        }
+    }
+
+/* CSS for section section:Contact */
+.contact-section {
+        position: relative;
+        padding: 48px 0;
+        background-image: url('images/562d8bf17df9a100139645c1dd82a7db376ca3ae.png');
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+    .contact-container {
+        max-width: 1440px;
+        margin: auto;
+        padding: 0 48px;
+        display: flex;
+        align-items: center;
+        gap: 56px;
+    }
+    .contact-image-side {
+        flex: 1;
+        min-width: 0;
+    }
+    .contact-image-side img {
+        width: 100%;
+        height: auto;
+        border-radius: 25px;
+        display: block;
+    }
+    .contact-form-side {
+        flex: 1.4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .contact-title {
+        margin: 0;
+        color: var(--white);
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;
+    }
+    .contact-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    .form-grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 20px;
+    }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .form-group.full-width {
+        grid-column: 1 / -1;
+    }
+    .form-group label {
+        color: var(--white);
+        font-weight: 700;
+        font-size: 12px;
+    }
+    .form-group input, .form-group textarea {
+        background-color: transparent;
+        border: 4px solid var(--accent-orange);
+        border-radius: 8px;
+        padding: 14px 12px;
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        color: var(--white);
+    }
+    .form-group input::placeholder, .form-group textarea::placeholder {
+        color: rgba(255, 153, 102, 0.5);
+        font-weight: 600;
+    }
+    .form-group textarea {
+        resize: vertical;
+        min-height: 123px;
+    }
+    .submit-button {
+        background-color: var(--accent-orange);
+        border: none;
+        border-radius: 12px;
+        padding: 8px 24px;
+        color: var(--white);
+        font-family: 'Unbounded', sans-serif;
+        font-weight: 700;
+        font-size: 15.4px;
+        cursor: pointer;
+        box-shadow: 2.3px 4.7px 11.8px 0px rgba(0, 0, 0, 0.25);
+        transition: transform 0.2s;
+    }
+    .submit-button:hover {
+        transform: scale(1.05);
+    }
+    .back-to-top-button {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        width: 88px;
+        height: 88px;
+        background-color: rgba(145, 18, 188, 0.6);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+    }
+    .back-to-top-button img {
+        width: 50px;
+        height: 50px;
+        transform: rotate(-90deg);
+    }
+    @media (max-width: 1024px) {
+        .contact-container {
+            flex-direction: column;
+        }
+        .contact-image-side {
+            display: none;
+        }
+    }
+    @media (max-width: 768px) {
+        .form-grid {
+            grid-template-columns: 1fr;
+        }
+        .back-to-top-button {
+            width: 60px;
+            height: 60px;
+            right: 20px;
+            bottom: 20px;
+        }
+        .back-to-top-button img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+/* CSS for section section:Footer */
+.site-footer-wrapper {
+        background-color: var(--primary-purple);
+        border-radius: 25px;
+        box-shadow: 4px 7px 25px 3px rgba(0, 0, 0, 0.4);
+        padding: 12px 40px 10px;
+        margin-top: 64px;
+    }
+    .footer-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 40px;
+        padding: 10px 15px;
+        flex-wrap: wrap;
+    }
+    .footer-col {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-logo-contact {
+        gap: 46px;
+    }
+    .footer-logo .logo-icon { width: 100.5px; height: 91px; }
+    .footer-logo .logo-text { font-size: 51.4px; }
+    .footer-logo .logo-subtitle { font-size: 28.5px; }
+    .footer-contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+        text-align: center;
+    }
+    .footer-heading {
+        margin: 0;
+        color: var(--background-light);
+        font-size: 38.5px;
+        font-weight: 700;
+    }
+    .footer-email {
+        font-family: 'Lato', sans-serif;
+        font-size: 32px;
+        color: var(--background-light);
+        text-decoration: none;
+    }
+    .footer-social {
+        align-items: center;
+        gap: 13px;
+    }
+    .footer-heading-light {
+        margin: 0;
+        color: var(--white);
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        border-bottom: 3px solid var(--black);
+        padding-bottom: 13px;
+        width: 100%;
+    }
+    .social-icons {
+        display: flex;
+        gap: 40px;
+        padding-top: 13px;
+    }
+    .social-icon-link {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        display: block;
+    }
+    .social-icon-link .social-bg,
+    .social-icon-link .social-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .social-icon-link .social-icon {
+        padding: 10px; /* Adjust as needed */
+        object-fit: contain;
+    }
+    .footer-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+    }
+    .footer-nav a {
+        color: var(--white);
+        font-size: 28px;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    .footer-bottom {
+        border-top: 2px solid var(--black);
+        margin-top: 19px;
+        padding-top: 19px;
+        text-align: center;
+        color: var(--white);
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .footer-bottom p {
+        margin: 0;
+    }
+    @media (max-width: 1280px) {
+        .footer-main {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 50px;
+        }
+        .footer-social {
+            width: 100%;
+        }
+        .footer-nav ul {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    @media (max-width: 768px) {
+        .footer-logo .logo-text { font-size: 36px; }
+        .footer-logo .logo-subtitle { font-size: 20px; }
+        .footer-heading { font-size: 28px; }
+        .footer-email { font-size: 22px; }
+        .footer-nav a { font-size: 20px; }
+        .footer-bottom { font-size: 10px; }
+    }
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<header class="site-header-wrapper">
+    <div id="top" class="container">
+        <div class="site-header">
+            <a href="#" class="logo">
+                <img src="images/I120_212_75_29_71_33.svg" alt="InovaTech Logo Icon" class="logo-icon">
+                <div class="logo-text-container">
+                    <span class="logo-text">Inova<span class="gradient-text">Tech</span></span>
+                    <span class="logo-subtitle">Technology Solutions</span>
+                </div>
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#">Parceiros</a></li>
+                    <li><a href="#contact">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<section id="hero" class="hero-section container">
+    <h1 class="hero-title">Nossos Serviços</h1>
+    <div class="hero-content">
+        <h2 class="hero-subtitle">Inovação e inteligência tecnológicas para o futuro da sua empresa</h2>
+        <p class="hero-description">Aqui na InovaTech unimos estratégia, design e tecnologia para ajudar empresas a crescer e inovar por meio de soluções digitais completas e personalizadas.</p>
+        <p class="hero-cta">Conheça um pouco do nosso serviço logo abaixo!</p>
+    </div>
+</section>
+<section id="services" class="services-section container">
+    <div class="service-card card-1">
+        <h3>Consultoria Estratégica</h3>
+    </div>
+    <div class="service-card card-2">
+        <h3>Concepção e Design</h3>
+    </div>
+    <div class="service-card card-3">
+        <h3>Desenvolvimento de Software</h3>
+    </div>
+</section>
+<section id="testimonials" class="testimonials-section container">
+    <h2 class="testimonials-title">Veja abaixo alguns feedbacks de nossos clientes.</h2>
+    <div class="testimonials-wrapper">
+        <div class="testimonials-carousel">
+            <div class="testimonial-card">
+                <blockquote>“A InovaTech nos ajudou a transformar um processo manual em uma plataforma totalmente automatizada. Reduzimos o tempo de execução de tarefas em mais de 40%.”</blockquote>
+                <cite>Lucas Andrade</cite>
+            </div>
+            <div class="testimonial-card">
+                <blockquote>“Recomendo fortemente a InovaTech. São estratégicos, criativos e comprometidos — entregam mais do que prometem.”</blockquote>
+                <cite>Fernanda Costa</cite>
+            </div>
+            <div class="testimonial-card">
+                <blockquote>“Consultoria extremamente completa — a InovaTech não só diagnosticou nossos gargalos, como também apresentou soluções práticas e rápidas de implementar.”</blockquote>
+                <cite>Paula Nogueira</cite>
+            </div>
+        </div>
+        <div class="testimonial-nav">
+            <button class="nav-arrow left">
+                <img src="images/I439_1225_439_1140.svg" alt="Previous Testimonial">
+            </button>
+            <button class="nav-arrow right">
+                <img src="images/I439_1225_439_1178.svg" alt="Next Testimonial">
+            </button>
+        </div>
+    </div>
+</section>
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+        <div class="contact-image-side">
+            <img src="images/562d8bf17df9a100139645c1dd82a7db376ca3ae.png" alt="Team working in an office">
+        </div>
+        <div class="contact-form-side">
+            <h2 class="contact-title">Entre em contato conosco!</h2>
+            <form class="contact-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Qual seu nome?</label>
+                        <input type="text" id="name" placeholder="Insira seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Qual seu e-mail?</label>
+                        <input type="email" id="email" placeholder="Insira seu e-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="source">Por onde nos conheceu?</label>
+                        <input type="text" id="source" placeholder="Insira onde nos conheceu">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Qual seu telefone de contato?</label>
+                        <input type="tel" id="phone" placeholder="Insira seu telefone">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" rows="4" placeholder="Insira sua mensagem"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="submit-button">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <a href="#top" class="back-to-top-button">
+        <img src="images/376_844.svg" alt="Back to top">
+    </a>
+</section>
+<footer class="site-footer-wrapper">
+    <div class="container">
+        <div class="footer-main">
+            <div class="footer-col footer-logo-contact">
+                <a href="#" class="logo footer-logo">
+                    <img src="images/I351_1196_316_625_316_592_71_33.svg" alt="InovaTech Logo Icon" class="logo-icon">
+                    <div class="logo-text-container">
+                        <span class="logo-text">Inova<span class="gradient-text">Tech</span></span>
+                        <span class="logo-subtitle">Technology Solutions</span>
+                    </div>
+                </a>
+                <div class="footer-contact-info">
+                    <h3 class="footer-heading">Contatos</h3>
+                    <a href="mailto:Inovatech@gmail.com" class="footer-email">Inovatech@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer-col footer-social">
+                <h3 class="footer-heading-light">Acesse nossas redes sociais</h3>
+                <div class="social-icons">
+                    <!--merged image-->
+                    <a href="#" class="social-icon-link">
+                        <img src="images/I351_1196_316_625_620_1815_390_835.svg" alt="Instagram background" class="social-bg">
+                        <img src="images/7f5b3e909c93c2feda363a3958d7e4a616fd33dd.png" alt="Instagram" class="social-icon">
+                    </a>
+                    <!--merged image-->
+                    <a href="#" class="social-icon-link">
+                        <img src="images/I351_1196_316_625_620_1816_390_839.svg" alt="LinkedIn background" class="social-bg">
+                        <img src="images/01bd92eb06873bdc30b1cb5f9c78b1ef5a9559d4.png" alt="LinkedIn" class="social-icon">
+                    </a>
+                    <!--merged image-->
+                    <a href="#" class="social-icon-link">
+                        <img src="images/I351_1196_316_625_620_1817_390_838.svg" alt="WhatsApp background" class="social-bg">
+                        <img src="images/15599b39c59c8e12b07e5f43a10b484cf3cce3aa.png" alt="WhatsApp" class="social-icon">
+                    </a>
+                </div>
+            </div>
+            <nav class="footer-col footer-nav">
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#">Parceiros</a></li>
+                    <li><a href="#contact">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p>Este sistema foi criado como parte do nosso Processo Trainee. | 2025 Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
