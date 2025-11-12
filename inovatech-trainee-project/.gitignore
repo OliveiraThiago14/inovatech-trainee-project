@@ -1,0 +1,66 @@
+# ------------------------------------
+# 1. ARQUIVOS E PASTAS DE BUILD/COMPILAÇÃO
+# ------------------------------------
+/dist/
+/build/
+/out/
+.cache
+.temp
+/tmp/
+
+# ------------------------------------
+# 2. PACOTES E DEPENDÊNCIAS (SE USAR NPM/YARN)
+# ------------------------------------
+# Caso você use pré-processadores (Sass, Less) ou ferramentas (Webpack/Vite/Gulp)
+/node_modules
+/bower_components
+
+# ------------------------------------
+# 3. ARQUIVOS ESPECÍFICOS DO SISTEMA OPERACIONAL
+# ------------------------------------
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
+
+# ------------------------------------
+# 4. ARQUIVOS DE CONFIGURAÇÃO DE IDE/EDITOR
+# ------------------------------------
+
+# Visual Studio Code
+.vscode/
+
+# JetBrains IDEs (WebStorm, IntelliJ)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# ------------------------------------
+# 5. FERRAMENTAS DE DESIGN / PROTOTIPAGEM
+# ------------------------------------
+# Figma (Backups locais de arquivos .fig)
+*.fig.bak
+
+# ------------------------------------
+# 6. ARQUIVOS DE LOGS E TESTES
+# ------------------------------------
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+test-reports/
+
+# ------------------------------------
+# 7. CHAVES E DADOS SENSÍVEIS (SE APLICÁVEL NO FUTURO)
+# ------------------------------------
+# Arquivos de variáveis de ambiente
+.env
+.env.development
+.env.production
