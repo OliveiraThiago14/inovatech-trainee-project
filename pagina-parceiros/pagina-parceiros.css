@@ -1,0 +1,1118 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+* {
+  box-sizing: border-box;
+  font-family: 'Unbounded', sans-serif; 
+  -webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+button:focus-visible {
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.p-gina-de-parceiros,
+.p-gina-de-parceiros * {
+  box-sizing: border-box;
+}
+.p-gina-de-parceiros {
+  background: var(--quinta, #fff1f1);
+  height: 2570px;
+  position: relative;
+  overflow: hidden;
+}
+.header {
+  background: #ffffff;
+  border-radius: 25px;
+  padding: 14px 48px 14px 48px;
+  display: flex;
+  flex-direction: row;
+  gap: 195px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  right: 20px;
+  left: 20px;
+  top: 21px;
+  box-shadow: 0px 4px 25.8px 3px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.frame-43 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  position: relative;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-30 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 298px;
+  position: relative;
+}
+.group-3 {
+  flex-shrink: 0;
+  width: 71px;
+  height: 84px;
+  position: relative;
+  overflow: visible;
+}
+.frame-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.inova-tech {
+  text-align: left;
+  font-family: "Unbounded", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: relative;
+}
+.inova-tech-span {
+  color: #000000;
+}
+.inova-tech-span2 {
+  background: linear-gradient(
+    90deg,
+    rgba(15, 45, 77, 1) 0%,
+    rgba(23, 72, 113, 1) 50%,
+    rgba(167, 118, 147, 1) 75%,
+    rgba(222, 209, 198, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.technology-solutions {
+  color: #000000;
+  text-align: left;
+  font-family: "Unbounded", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: relative;
+}
+.frame-11 {
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  height: 24px;
+  position: relative;
+}
+.inicio {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.in-cio {
+  color: #000000;
+  text-align: center;
+  font-family: "Unbounded-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+}
+.line-5 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  flex-shrink: 0;
+  width: 20px;
+  height: 0px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.quem-somos {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.quem-somos2 {
+  color: #000000;
+  text-align: center;
+  font-family: "Unbounded-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+}
+.line-6 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  flex-shrink: 0;
+  width: 20px;
+  height: 0px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.servi-os {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.servi-os2 {
+  color: #000000;
+  text-align: center;
+  font-family: "Unbounded-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+}
+.line-7 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  flex-shrink: 0;
+  width: 20px;
+  height: 0px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.parceiros {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.parceiros2 {
+  color: #000000;
+  text-align: center;
+  font-family: "Unbounded-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+}
+.line-8 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px 0 0 0;
+  flex-shrink: 0;
+  width: 20px;
+  height: 0px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.contatos {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.contatos2 {
+  color: #000000;
+  text-align: center;
+  font-family: "Unbounded-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+}
+.parceiros3 {
+  position: absolute;
+  inset: 0;
+}
+.parceiros4 {
+  background: #9112bc;
+  padding: 62px 0px 62px 0px;
+  height: 246px;
+  position: absolute;
+  right: -2px;
+  left: 0px;
+  top: 367px;
+}
+.rectangle-25 {
+  background: #ffffff;
+  height: 118px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 64px;
+}
+.component-2 {
+  border-style: solid;
+  border-color: var(--principal, #9112bc);
+  border-width: 2px 0px 2px 0px;
+  padding: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  right: 49px;
+  left: 49px;
+  top: 87px;
+  overflow: hidden;
+}
+.frame-29 {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  height: 72px;
+  position: relative;
+  overflow: visible;
+}
+.frame-292 {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  height: 72px;
+  position: relative;
+  overflow: visible;
+}
+.introdu-o-aos-parceiros {
+  height: 158px;
+  position: absolute;
+  right: 40px;
+  left: 48px;
+  top: 176px;
+}
+.sem-d-vida-o-sucesso-da-inovatech-tamb-m-resultado-da-colabora-o-de-nossos-aliados-que-acreditam-nos-nossos-valores {
+  color: #660b76;
+  text-align: right;
+  font-family: "Unbounded-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  right: 0px;
+  top: 68px;
+  width: 675px;
+  height: 90px;
+}
+.nossos-parceiros {
+  color: #9112bc;
+  text-align: left;
+  font-family: "Unbounded-Bold", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 605px;
+  height: 158px;
+}
+.frame-38 {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 41px;
+  top: 667px;
+}
+.como-funcionam-as-parcerias {
+  color: #9112bc;
+  text-align: left;
+  font-family: "Unbounded-Regular", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  position: relative;
+  width: 425px;
+}
+.form-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  align-items: center;
+  justify-content: flex-start;
+  height: 975.12px;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 1582.92px;
+}
+.formulario-pagina {
+  background: linear-gradient(
+    to left,
+    rgba(175, 38, 221, 0.4),
+    rgba(175, 38, 221, 0.4)
+  );
+  padding: 48px;
+  display: flex;
+  flex-direction: row;
+  gap: 56px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1440px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(221, 39, 231, 0.25);
+  overflow: hidden;
+}
+.secao-contato-1 {
+  border-radius: 25px;
+  flex-shrink: 0;
+  width: 536px;
+  height: 300px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 536/300;
+}
+.frame-54 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+}
+.entre-em-contato-conosco {
+  color: #681175;
+  text-align: center;
+  font-family: "Unbounded-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+}
+.component-1-formulario-contato {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 300px;
+  position: relative;
+}
+.campos-formulario-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 46.32%;
+  height: 20%;
+  position: absolute;
+  right: 53.33%;
+  left: 0.35%;
+  bottom: 54.67%;
+  top: 25.33%;
+}
+.qual-seu-nome {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Unbounded-Bold", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+.frame-50 {
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #ff9966;
+  border-width: 4px;
+  padding: 14px 12px 14px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+.frame-53 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.insira-seu-nome {
+  color: rgba(255, 153, 102, 0.5);
+  text-align: left;
+  font-family: "Lato-SemiBold", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.campos-formulario-contato2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 46.32%;
+  height: 20%;
+  position: absolute;
+  right: 0%;
+  left: 53.68%;
+  bottom: 80%;
+  top: 0%;
+}
+.campos-formulario-contato3 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 99.65%;
+  height: 48.67%;
+  position: absolute;
+  right: 0%;
+  left: 0.35%;
+  bottom: 0%;
+  top: 51.33%;
+}
+.frame-502 {
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #ff9966;
+  border-width: 4px;
+  padding: 14px 12px 14px 12px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.campos-formulario-contato4 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 46.32%;
+  height: 20%;
+  position: absolute;
+  right: 0%;
+  left: 53.68%;
+  bottom: 54.67%;
+  top: 25.33%;
+}
+.campos-formulario-contato5 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 46.67%;
+  height: 19.33%;
+  position: absolute;
+  right: 53.33%;
+  left: 0%;
+  bottom: 80.67%;
+  top: 0%;
+}
+.formulario-botao {
+  background: #ff9966;
+  border-radius: 12.09px;
+  padding: 8.06px 24px 8.06px 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 5.04px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: 2.36px 4.71px 11.79px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.enviar {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Unbounded-Bold", sans-serif;
+  font-size: 15.391233444213867px;
+  font-weight: 700;
+  position: relative;
+}
+.footer {
+  background: #9112bc;
+  border-radius: 25px;
+  padding: 12px 40px 10px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 1400px;
+  position: relative;
+  box-shadow: 4px 7px 25px 3px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+.contents {
+  padding: 10px 15px 10px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-5 {
+  display: flex;
+  flex-direction: row;
+  gap: 121px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.frame-4 {
+  display: flex;
+  flex-direction: column;
+  gap: 46px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 402px;
+  position: relative;
+}
+.logo2 {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 91px;
+  position: relative;
+}
+.inova-tech2 {
+  text-align: left;
+  font-family: "Unbounded-Regular", sans-serif;
+  font-size: 51.379974365234375px;
+  font-weight: 400;
+  position: absolute;
+  right: -0.37%;
+  left: 25%;
+  width: 75.37%;
+  bottom: 17.77%;
+  top: 11.9%;
+  height: 70.33%;
+}
+.inova-tech-2-span {
+  color: #000000;
+}
+.inova-tech-2-span2 {
+  background: linear-gradient(
+    90deg,
+    rgba(15, 45, 77, 1) 0%,
+    rgba(23, 72, 113, 1) 50%,
+    rgba(167, 118, 147, 1) 75%,
+    rgba(222, 209, 198, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.technology-solutions2 {
+  color: #000000;
+  text-align: left;
+  font-family: "SeoulNamsanCl-Regular", sans-serif;
+  font-size: 28.544429779052734px;
+  font-weight: 400;
+  position: absolute;
+  right: 6.35%;
+  left: 33.45%;
+  width: 60.2%;
+  bottom: 2.66%;
+  top: 65.48%;
+  height: 31.87%;
+}
+.group-2 {
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  right: 75%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: visible;
+}
+.frame-8 {
+  display: flex;
+  flex-direction: column;
+  gap: 19.23px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.contatos3 {
+  color: var(--quinta, #fff1f1);
+  text-align: center;
+  font-family: "Unbounded-Bold", sans-serif;
+  font-size: 38.45036315917969px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+.inovatech-gmail-com {
+  color: var(--quinta, #fff1f1);
+  text-align: center;
+  font-family: "Lato-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.frame-52 {
+  display: flex;
+  flex-direction: column;
+  gap: 12.82px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.acesse-nossas-redes-sociais {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Unbounded-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+}
+.line-4 {
+  margin-top: -3.2px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 3.2px 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 40.05px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.insta-icon {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: visible;
+}
+.linkedin-icon {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: visible;
+}
+.whatsapp-icon {
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: visible;
+}
+.group-32 {
+  flex-shrink: 0;
+  width: 312.74px;
+  height: 307px;
+  position: static;
+}
+.conte-do-do-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 33.61px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 312.74px;
+  height: 307px;
+  position: absolute;
+  left: 1024.1px;
+  top: 0px;
+}
+.inicio2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.in-cio2 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Unbounded-Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+}
+.quem-somos3 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.quem-somos4 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Unbounded-Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+}
+.servi-os3 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.servi-os4 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Unbounded-Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+}
+.parceiros5 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.parceiros6 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Unbounded-Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+}
+.contatos4 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.contatos5 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Unbounded-Bold", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  position: relative;
+}
+.frame-56 {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.line-9 {
+  margin-top: -2px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 2px 0 0 0;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 0px;
+  position: relative;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.este-sistema-foi-criado-como-parte-do-nosso-processo-trainee-2025-todos-os-direitos-reservados {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Unbounded-Bold", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+.contribui-es {
+  display: flex;
+  flex-direction: row;
+  gap: 145px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 40px;
+  left: 51px;
+  top: 943px;
+}
+.contribui-es-orc-estra {
+  flex-shrink: 0;
+  width: 353px;
+  height: 484px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.rectangle-34 {
+  background: #b545db;
+  border-radius: 55px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.rectangle-37 {
+  background: #fff1f1;
+  border-radius: 33px;
+  width: 79.32%;
+  height: 19.83%;
+  position: absolute;
+  right: 10.2%;
+  left: 10.48%;
+  bottom: 74.17%;
+  top: 5.99%;
+}
+.rectangle-21 {
+  width: 83%;
+  height: 13.22%;
+  position: absolute;
+  right: 8.5%;
+  left: 8.5%;
+  bottom: 77.48%;
+  top: 9.3%;
+  object-fit: cover;
+}
+.contamos-com-a-orc-estra-para-sempre-oferecermos-um-servi-o-que-seja-estimulante-tanto-na-etapa-do-desenvolvimento-do-projeto-como-na-funcionalidade-para-o-cliente-para-isso-usamos-a-gamifica-es-proposta-pela-orc-estra-como-um-pilar-para-o-nosso-organismo {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Unbounded-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  right: 7.93%;
+  left: 9.07%;
+  width: 83%;
+  bottom: 3.31%;
+  top: 27.89%;
+  height: 68.8%;
+}
+.contribui-es-linux {
+  flex-shrink: 0;
+  width: 353px;
+  height: 484px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.rectangle-35 {
+  background: #b545db;
+  border-radius: 55px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.rectangle-38 {
+  background: #fff1f1;
+  border-radius: 33px;
+  width: 79.32%;
+  height: 19.83%;
+  position: absolute;
+  right: 10.2%;
+  left: 10.48%;
+  bottom: 74.38%;
+  top: 5.79%;
+}
+._72-d-1-f-12-edf-758-d-24-f-5-b-6-db-73-bac-4-f-297-logotipo-do-linux-1 {
+  width: 50.42%;
+  height: 80px;
+  position: absolute;
+  right: 24.65%;
+  left: 24.93%;
+  top: 36px;
+  object-fit: cover;
+  aspect-ratio: 178/80;
+}
+.parceria-estrat-gica-com-o-linux-um-dos-nossos-primeiros-clientes-que-foi-fundamental-para-o-aprendizado-da-empresa-na-dinamica-de-opera-o-de-servi-os {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Unbounded-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  right: 10.2%;
+  left: 11.9%;
+  width: 77.9%;
+  bottom: 12.6%;
+  top: 28.31%;
+  height: 59.09%;
+}
+.contribui-es-adobe {
+  flex-shrink: 0;
+  width: 353px;
+  height: 484px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.rectangle-36 {
+  background: #b545db;
+  border-radius: 55px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+}
+.rectangle-39 {
+  background: #fff1f1;
+  border-radius: 33px;
+  width: 79.32%;
+  height: 19.83%;
+  position: absolute;
+  right: 10.2%;
+  left: 10.48%;
+  bottom: 74.38%;
+  top: 5.79%;
+}
+.adobe-corporate-logo-1 {
+  width: 67.14%;
+  height: 62px;
+  position: absolute;
+  right: 16.43%;
+  left: 16.43%;
+  top: 43px;
+  object-fit: cover;
+  aspect-ratio: 237/62;
+}
+.a-adobe-a-maior-autoridade-do-ramo-audiovisual-contribui-pra-nossa-identidade-visual-no-marketing-bem-como-no-desenvolvimento-de-projetos-e-na-opera-o-de-nossos-servi-os {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Unbounded-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  right: 8.5%;
+  left: 13.6%;
+  width: 77.9%;
+  bottom: 7.02%;
+  top: 27.89%;
+  height: 65.08%;
+}
+.bot-o-de-voltar {
+  background: rgba(145, 18, 188, 0.6);
+  border-radius: 44px;
+  padding: 19px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 88px;
+  height: 88px;
+  position: fixed;
+  left: 1312px;
+  top: 756px;
+}
+.arrow-forward {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  overflow: visible;
+  aspect-ratio: 1;
+}
