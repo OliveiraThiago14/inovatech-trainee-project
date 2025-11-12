@@ -578,6 +578,10 @@ header .container {
         border-bottom: none;
         padding-bottom: 0;
     }
+
+    .contato-footer p {
+        word-break: break-all;
+    }
     
     #footer-nav {
         justify-content: center;
