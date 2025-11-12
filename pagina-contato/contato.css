@@ -32,9 +32,9 @@ header .container {
     background-color: white;
     border-radius: 25px;
     box-shadow: 0 4px 10px #917a96;
-    
+
     padding: 14px 48px;
-    
+
     max-width: 1500px;
     margin: 0 auto;
 }
@@ -54,7 +54,7 @@ header .container {
     color: black;
     font-weight: bold;
     padding: 5px;
-    
+
     white-space: nowrap;
 }
 
@@ -62,7 +62,7 @@ header .container {
     color: #FF9966;
 }
 
-#nav-barra li + li::before {
+#nav-barra li+li::before {
     content: '|';
     color: #ccc;
     margin-right: 28px;
@@ -77,7 +77,7 @@ header .container {
 /* Direção */
 .direcao {
     /* (Cor do seu design) */
-    background-color: #D792EE; 
+    background-color: #D792EE;
     padding: 48px 32px;
     margin: auto 20px;
     text-align: center;
@@ -100,7 +100,7 @@ header .container {
     display: flex;
     justify-content: center;
     gap: 74px;
-    
+
     background-color: #9112BC;
     padding: 40px;
     border-radius: 25px;
@@ -173,8 +173,13 @@ header .container {
     color: black;
 }
 
-.info-p1 { margin-bottom: 10px; }
-.info-p2 { margin-bottom: 46px; }
+.info-p1 {
+    margin-bottom: 10px;
+}
+
+.info-p2 {
+    margin-bottom: 46px;
+}
 
 .info .email-empresa strong {
     color: #9112BC;
@@ -218,6 +223,7 @@ header .container {
     height: 85px;
     transition: transform 0.3s;
 }
+
 .rede:hover img {
     transform: scale(1.05);
 }
@@ -229,16 +235,107 @@ header .container {
     font-weight: bold;
     white-space: nowrap;
 }
+
 .rede a:hover {
     color: #9112BC;
 }
 
 
+/* Formulário */
+.formulario-contato {
+    padding: 48px 0;
+    margin: 20px;
+
+    background-image: linear-gradient(rgb(145, 18, 188, 0.5), rgba(145, 18, 188, 0.5)),
+        url('imagens-contato/pessoas-trabalhando.svg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 25px;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    gap: 40px;
+
+    max-width: 1500px; /* Ou o max-width do seu site */
+    margin: 0 auto;
+}
+
+.form-img img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+}
+
+.form-conteudo h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: white;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 2px solid #FF9966;
+    border-radius: 8px;
+    color: white;
+    font-size: 12px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #FF9966;
+}
+
+.enviar-container {
+    text-align: center;
+}
+
+.btn-enviar {
+    background-color: #FF9966;
+    color: white;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #FF9966;
+}
+
+
 /* TABLET */
-@media (max-width: 1380px) {  
+@media (max-width: 1380px) {
+
     /* Barra de navegação */
     #nav-barra ul,
-    #nav-barra li + li::before {
+    #nav-barra li+li::before {
         display: none;
     }
 
@@ -258,14 +355,14 @@ header .container {
         width: 100%;
         height: 100%;
         background-color: #9112BC;
-        
+
         transform: translateX(100%);
         transition: transform 0.3s ease-in-out;
         visibility: hidden;
-        
+
         display: flex;
         flex-direction: column;
-        
+
         padding: 20px 24px;
         box-sizing: border-box;
     }
@@ -289,7 +386,7 @@ header .container {
         font-size: 20px;
         font-weight: 500;
     }
-    
+
     #nav-barra a:hover {
         color: #FF9966;
     }
@@ -359,15 +456,25 @@ header .container {
     .redes-sociais {
         text-align: center;
     }
-    
+
     .icones {
         justify-content: center;
+    }
+
+    /* Formulário */
+    .form-container {
+        grid-template-columns: 1fr;
+    }
+
+    .form-img {
+        display: none;
     }
 }
 
 
 /* MOBILE */
 @media (max-width: 576px) {
+
     /* Barra de navegação */
     header .container {
         padding: 8px 20px;
@@ -386,21 +493,23 @@ header .container {
         padding: 30px 0px;
         margin: 10px 0;
     }
-    
+
     .direcao-cards {
-        flex-direction: row; 
+        flex-direction: row;
         overflow-x: auto;
         flex-wrap: nowrap;
         justify-content: flex-start;
-        
+
         padding: 20px;
 
         -webkit-overflow-scrolling: touch;
-        scrollbar-width: none; /* Firefox */
+        scrollbar-width: none;
+        /* Firefox */
     }
-    
+
     .direcao-cards::-webkit-scrollbar {
-        display: none; /* Chrome, Safari, Opera */
+        display: none;
+        /* Chrome, Safari, Opera */
     }
 
     .card-perfil {
@@ -408,12 +517,26 @@ header .container {
         min-width: 260px;
         max-width: 100%;
     }
-    
-    .direcao h2 { font-size: 28px; }
-    .direcao .subtitulo { font-size: 20px; }
-    .card-perfil h3 { font-size: 24px; }
-    .card-perfil .cargo { font-size: 18px; }
-    .card-perfil .email-diretor {font-size: 12px;}
+
+    .direcao h2 {
+        font-size: 28px;
+    }
+
+    .direcao .subtitulo {
+        font-size: 20px;
+    }
+
+    .card-perfil h3 {
+        font-size: 24px;
+    }
+
+    .card-perfil .cargo {
+        font-size: 18px;
+    }
+
+    .card-perfil .email-diretor {
+        font-size: 12px;
+    }
 
     /* Contato */
     .contato {
@@ -424,13 +547,23 @@ header .container {
     .contato-container {
         gap: 60px;
     }
-    
-    .info h2 { font-size: 28px; }
-    .info .info-p1,
-    .info .info-p2 { font-size: 18px; }
-    .info .email-empresa { font-size: 14px; }
 
-    .redes-sociais h3 { font-size: 20px; }
+    .info h2 {
+        font-size: 28px;
+    }
+
+    .info .info-p1,
+    .info .info-p2 {
+        font-size: 18px;
+    }
+
+    .info .email-empresa {
+        font-size: 14px;
+    }
+
+    .redes-sociais h3 {
+        font-size: 20px;
+    }
 
     .icones {
         gap: 15px;
@@ -443,5 +576,10 @@ header .container {
 
     .rede a {
         font-size: 10px;
+    }
+
+    /* Formulário */
+    .form-grid {
+        grid-template-columns: 1fr;
     }
 }
