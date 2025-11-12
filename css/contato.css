@@ -75,7 +75,6 @@ header .container {
 
 /* Direção */
 .direcao {
-    /* (Cor do seu design) */
     background-color: #D792EE;
     padding: 48px 32px;
     margin: auto 20px;
@@ -246,7 +245,7 @@ header .container {
     margin: 20px;
 
     background-image: linear-gradient(rgb(145, 18, 188, 0.5), rgba(145, 18, 188, 0.5)),
-        url('imagens-contato/pessoas-trabalhando.svg');
+        url('../assets/imagens-contato/pessoas-trabalhando.svg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -259,7 +258,7 @@ header .container {
     align-items: center;
     gap: 40px;
 
-    max-width: 1500px; /* Ou o max-width do seu site */
+    max-width: 1500px;
     margin: 0 auto;
 }
 
