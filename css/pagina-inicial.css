@@ -21,6 +21,7 @@
     z-index: 1000;
     width: 96%;
 
+    margin: 16px;
     margin-bottom: 116px;
 }
 
@@ -30,7 +31,7 @@
 }
 
 .header-content nav a{
-    font-size: 14px;
+    font-size: 20px;
     transition: all 0.8s gentle;
 }
 
@@ -124,8 +125,8 @@
     justify-content: space-between;
     gap: 47px;
     padding: 62px 42px;
-
-    margin-top: 228px;
+    margin: 48px;
+    margin-top: 208px;
     margin-bottom: 116px;
 }
 
@@ -231,7 +232,6 @@
     flex-wrap: nowrap;
     width: 100%;
     position: relative;
-    
     margin-bottom: 116px;
 }
 
@@ -260,27 +260,29 @@
 }
 
 .historico-container {
-  width: 100%; 
-  overflow-y: hidden; 
-  gap: 29px;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: nowrap; 
-  overflow-x: auto; 
-  scroll-behavior: smooth; 
-  -webkit-overflow-scrolling: touch; 
+
+    width: 100%; 
+    overflow-y: hidden; 
+    gap: 29px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    scroll-behavior: smooth; 
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch; 
 }
 
 .historico-container .cards {
-  width: 376px;
-  height: 296px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 34px 34px;
-  gap: 2px;
-}
+    width: 376px;
+    height: 296px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34px 34px;
+    gap: 2px;
+    }
 
 @media (max-width: 768px) {
     .historico {
@@ -345,6 +347,8 @@
 
 
 .quem-somos-content .quem-somos-img {
+    margin-left: 48px;
+    margin-right: 48px;
     display: block;
     width: 564px;
     height: 300px;
@@ -465,7 +469,7 @@
     border-radius: 25px;
     background-color: rgba(145, 18, 188, 0.22);
     padding: 46px 56px;
-
+    margin: 48px;
     margin-bottom: 116px;
 }
 
@@ -595,6 +599,7 @@
         padding: 20px 15px;
         margin-bottom: 40px;
         gap: 20px;
+        
     }
     
     .servicos-text h2 {
@@ -762,6 +767,8 @@
     padding-top: 22px;
     font-family: 'Unbounded', sans-serif;
     font-weight: bold;
+    border-radius: 24px;
+    margin:24px;
 }
 
 .footer-content {
@@ -871,7 +878,7 @@
 
 * {
     margin: 0;
-    padding: 8px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -929,14 +936,122 @@ a{
     width: 472px;
 }
 
-.contato-content{
+.contato-content {
     display: flex;
-    width: 1440px;
-    padding: 48px;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    gap: 56px;
+    justify-content: center;
+    gap: 60px;
+    padding: 60px;
+    width: 100vm;
+    margin: 0 auto;
     background: linear-gradient(0deg, rgba(175, 38, 221, 0.40) 0%, rgba(175, 38, 221, 0.40) 100%), url(./assets/secao-contato-img.png) lightgray 50% / cover no-repeat;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 0;
 }
 
+
+
+
+.contato-img-box img {
+    width: 550px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.contato-form-wrapper {
+    flex: 1;
+    max-width: 600px;
+}
+
+.contato-form-wrapper h2 {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 28px;
+    color: white;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.input-box h3 {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 14px;
+    color: white;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    background-color: transparent;
+    border: 4px solid #FF9F5E;
+    border-radius: 12px;
+    padding: 12px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.input-box input::placeholder,
+.input-box textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.input-box textarea {
+    resize: none;
+    height: 120px;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+.button-container {
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.button-formulario {
+    border: none;
+    border-radius: 12.093px;
+    background: #F96;
+    box-shadow: 2px 4px 11px 0 rgba(0, 0, 0, 0.123);
+}
+
+@media (max-width: 900px) {
+    .contato-content {
+        flex-direction: column;
+        padding: 30px;
+        gap: 40px;
+    }
+
+    .contato-img-box img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: span 1;
+    }
+    
+    .contato-form-wrapper h2 {
+        text-align: center;
+    }
+}
