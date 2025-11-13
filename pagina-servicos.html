@@ -762,31 +762,34 @@ header .container {
         </div>
         <div class="contact-form-side">
             <h2 class="contact-title">Entre em contato conosco!</h2>
-            <form class="contact-form">
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label for="name">Qual seu nome?</label>
-                        <input type="text" id="name" placeholder="Insira seu nome">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Qual seu e-mail?</label>
-                        <input type="email" id="email" placeholder="Insira seu e-mail">
-                    </div>
-                    <div class="form-group">
-                        <label for="source">Por onde nos conheceu?</label>
-                        <input type="text" id="source" placeholder="Insira onde nos conheceu">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Qual seu telefone de contato?</label>
-                        <input type="tel" id="phone" placeholder="Insira seu telefone">
-                    </div>
-                    <div class="form-group full-width">
-                        <label for="message">Mensagem:</label>
-                        <textarea id="message" rows="4" placeholder="Insira sua mensagem"></textarea>
-                    </div>
-                </div>
-                <button type="submit" class="submit-button">Enviar</button>
-            </form>
+           <form id="contact-form" class="form-grid" action="agradecimento.html">
+                        <div class="input-box">
+                            <h3>Qual seu nome?</h3>
+                            <input type="text" name="user_name" placeholder="Seu nome" required>
+                        </div>
+                        <div class="input-box">
+                            <h3>Qual seu e-mail?</h3>
+                            <input type="email" name="user_email" placeholder="Seu e-mail" required>
+                        </div>
+
+                        <div class="input-box">
+                            <h3>Por onde nos conheceu?</h3>
+                            <input type="text" name="user_origin" placeholder="Como nos conheceu?" required>
+                        </div>
+                        <div class="input-box">
+                            <h3>Qual seu telefone de contato?</h3>
+                            <input type="text" name="user_phone" placeholder="Seu telefone" required>
+                        </div>
+
+                        <div class="input-box full-width">
+                            <h3>Mensagem:</h3>
+                            <textarea name="message" placeholder="Digite sua mensagem" required></textarea>
+                        </div>
+
+                        <div class="full-width button-container">
+                            <button class="button button-formulario" type="submit">Enviar</button>
+                        </div>
+                    </form>
         </div>
     </div>
     <a href="#top" class="back-to-top-button">
