@@ -26,17 +26,24 @@ a {
   box-sizing: border-box;
 }
 .p-gina-de-parceiros {
-  background: var(--quinta, #fff1f1);
-  height: 2570px;
-  position: relative;
-  overflow: hidden;
+ background: var(--quinta, #fff1f1);
+ height: 2570px;
+ position: relative;
+ overflow: hidden;
+ 
+ /* CORREÇÃO 1/2: Adiciona margem superior para compensar o header fixo */
+ margin-top: 100px; 
 }
 
 
 header {
-    padding: 20px;
-    position: sticky;
-    top: 0;
+ padding: 20px;
+ /* CORREÇÃO 2/2: Altera para position: fixed para garantir que acompanhe o rolamento */
+ position: fixed; 
+ top: 0;
+    left: 0;
+    width: 100%; /* Garante que ocupe toda a largura da tela */
+    z-index: 1000; /* Garante que fique acima de todo o conteúdo */
 }
 
 header .container {
