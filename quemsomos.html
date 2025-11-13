@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="quemsomos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/quemsomos.css">
     <title>Quem Somos</title>
 </head>
 <body>
-    <header>
+
+   <header>
         <div class="container">
 
             <div class="logo">
-                <img src="../imagens/inovatech-logo.svg" alt="InovaTech Logo">
+                <img src="assets/imagens-contato/inovatech-logo.svg" alt="InovaTech Logo">
             </div>
 
             <nav id="nav-barra">
                 <div class="menu-header">
                     <div class="logo-menu">
-                        <img src="../imagens/inovatech-logo-branca.svg" alt="InovaTech Logo">
+                        <img src="assets/imagens-contato/inovatech-logo-branca.svg" alt="InovaTech Logo">
                     </div>
 
                     <button id="btn-fechar">
@@ -26,11 +28,11 @@
                 </div>
 
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Quem somos</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Parceiros</a></li>
-                    <li><a href="#">Contatos</a></li>
+                    <li><a href="./index.html">Início</a></li>
+                    <li><a href="./quemsomos.html">Quem somos</a></li>
+                    <li><a href="./pagina-servicos.html">Serviços</a></li>
+                    <li><a href="./pagina-parceiros.html">Parceiros</a></li>
+                    <li><a href="./contato.html">Contatos</a></li>
                 </ul>
             </nav>
 
@@ -92,52 +94,57 @@
 
     </section>
 
-
-          <section id="contato">
+ <section id="contato">
             <div class="contato-content">
-                <div class="contato-text">
-                    <h2>Entre em contato conosco!</h2>
+                
+                <div class="contato-img-box">
+                    <img src="./assets/secao-contato-img.png" alt="Nossa Equipe">
                 </div>
 
-    <div class="contato-formulario">
-      <form action="https://formspree.io/f/xvgdoydj" method="POST">
-        <div>
-          <h3>Qual seu nome?</h3>
-          <input type="text" placeholder="Seu nome" name="Nome" required/>
-        </div>
-        <div>
-          <h3>Qual seu email?</h3>
-          <input type="email" placeholder="Seu e-mail" name="Email" required/>
-        </div>
-        <div>
-          <h3>Por onde nos conheceu?</h3>
-          <input type="text" placeholder="Fale onde nos conheceu" name="Onde" required/>
-        </div>
-        <div>
-          <h3>Qual seu telefone de contato?</h3>
-          <input type="tel" placeholder="Seu telefone" name="Telefone" required/>
-        </div>
-        <div>
-          <h3>Mensagem:</h3>
-          <textarea placeholder="Digite sua mensagem" name="Mensagem" required></textarea>
-        </div>
-        <button class="button button-formulario" type="submit">Enviar</button>
-      </form>
-    </div>
+                <div class="contato-form-wrapper">
+                    
+                    <h2>Entre em contato conosco!</h2>
+                    
+                    <form class="form-grid"  action="https://formspree.io/f/xvgdoydj" method="POST">
+                        <div class="input-box">
+                            <h3>Qual seu nome?</h3>
+                            <input type="text" placeholder="Insira seu nome" name="Nome" required/>
+                        </div>
+                        <div class="input-box">
+                            <h3>Qual seu e-mail?</h3>
+                            <input type="email" name="user_email" placeholder="Insira seu e-mail" required/>
+                        </div>
 
-    <div class="contato-img">
-      <img src="assets/imagens-quemsomos/secao-contato-img.png" alt="">
-    </div>
-  </div>
-</section>
-    </main>
+                        <div class="input-box">
+                            <h3>Por onde nos conheceu?</h3>
+                            <input type="text" placeholder="Insira onde nos conheceu" name="Onde_conheceu" required/>
+                        </div>
+                        <div class="input-box">
+                            <h3>Qual seu telefone de contato?</h3>
+                            <input type="tel" placeholder="Insira seu telefone" name="Telefone" required/>
+                        </div>
 
-    <footer class="footer">
+                        <div class="input-box full-width">
+                            <h3>Mensagem:</h3>
+                            <textarea placeholder="Insira sua mensagem" name="Mensagem" required></textarea>
+                        </div>
+
+                        <div class="full-width button-container">
+                            <button class="button button-formulario" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+        
+        <footer class="footer">
         <div class="container">
             <div class="footer-container">
                 <div class="footer-col" id="footer-logo-contato">
                     <div class="logo-footer">
-                        <img src="../imagens/inovatech-logo-branca.svg" alt="InovaTech Logo" class="logo-footer-img">
+                        <img src="assets\imagens-contato\inovatech-logo-branca.svg" alt="InovaTech Logo"
+                            class="logo-footer-img">
                     </div>
                     <div class="contato-footer">
                         <strong>Contatos</strong>
@@ -148,34 +155,36 @@
                 <div class="footer-col" id="footer-redes">
                     <strong>Acesse nossas redes sociais</strong>
                     <div class="footer-icones">
-                        <a href="#" target="_blank"><img src="imagens-contato/insta-icon.svg"
+                        <a href="#" target="_blank"><img src="assets\imagens-contato\insta-icon.svg"
                                 alt="Instagram"></a>
-                        <a href="#" target="_blank"><img src="imagens-contato/linkedin-icon.svg"
+                        <a href="#" target="_blank"><img src="assets\imagens-contato\linkedin-icon.svg"
                                 alt="LinkedIn"></a>
-                        <a href="#" target="_blank"><img src="imagens-contato/whatsapp-icon.svg"
+                        <a href="#" target="_blank"><img src="assets\imagens-contato\whatsapp-icon.svg"
                                 alt="WhatsApp"></a>
                     </div>
                 </div>
 
                 <div class="footer-col" id="footer-nav">
-                    <nav>
-                        <ul>
-                            <li><a href="#">Início</a></li>
-                            <li><a href="#">Quem Somos</a></li>
-                            <li><a href="#">Serviços</a></li>
-                            <li><a href="#">Parceiros</a></li>
-                            <li><a href="#">Contatos</a></li>
-                        </ul>
-                    </nav>
+                    <ul>
+                        <li><a href="./index.html">Início</a></li>
+                        <li><a href="./quemsomos.html">Quem Somos</a></li>
+                        <li><a href="./pagina-servicos.html">Serviços</a></li>
+                        <li><a href="./pagina-parceiros.html">Parceiros</a></li>
+                        <li><a href="./contato.html">Contatos</a></li>
+                    </ul>
                 </div>
 
-                </div>
-                <div class="footer-bottom">
-                    <p>Este sistema foi criado como parte do nosso Processo Trainee. | 2025 Todos os direitos reservados.
-                    </p>
-                </div>
             </div>
+            <div class="footer-bottom">
+                <p>Este sistema foi criado como parte do nosso Processo Trainee. | 2025 Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
     </footer>
+
+    </main>
+
+   
     <script src="quemsomos.js"></script>
 </body>
 </body>

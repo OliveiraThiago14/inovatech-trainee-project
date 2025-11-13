@@ -1,4 +1,4 @@
-:root {
+ :root {
     --primary-purple: #9112bc;
     --light-purple: #b545db;
     --accent-orange: #ff9966;
@@ -10,6 +10,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
