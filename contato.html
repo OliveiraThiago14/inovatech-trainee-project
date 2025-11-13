@@ -120,6 +120,7 @@
             <div class="container">
 
                 <div class="form-container">
+
                     <div class="form-img">
                         <img src="assets\imagens-contato\pessoas-trabalhando.svg" alt="Equipe trabalhando em computadores">
                     </div>
@@ -127,34 +128,37 @@
                     <div class="form-conteudo">
                         <h3>Entre em contato conosco!</h3>
 
-                        <form id="contact-form" class="form-grid" action="agradecimento.html">
-                        <div class="input-box">
-                            <h3>Qual seu nome?</h3>
-                            <input type="text" name="user_name" placeholder="Seu nome" required>
-                        </div>
-                        <div class="input-box">
-                            <h3>Qual seu e-mail?</h3>
-                            <input type="email" name="user_email" placeholder="Seu e-mail" required>
-                        </div>
+                        <form action="#">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="nome">Qual seu nome?</label>
+                                    <input type="text" id="nome" name="nome" placeholder="Insira seu nome">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Qual seu e-mail?</label>
+                                    <input type="email" id="email" name="email" placeholder="Insira seu e-mail">
+                                </div>
+                                <div class="form-group">
+                                    <label for="conheceu">Por onde nos conheceu?</label>
+                                    <input type="text" id="conheceu" name="conheceu"
+                                        placeholder="Insira onde nos conheceu">
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefone">Qual seu telefone de contato?</label>
+                                    <input type="tel" id="telefone" name="telefone" placeholder="Insira seu telefone">
+                                </div>
+                            </div>
 
-                        <div class="input-box">
-                            <h3>Por onde nos conheceu?</h3>
-                            <input type="text" name="user_origin" placeholder="Como nos conheceu?" required>
-                        </div>
-                        <div class="input-box">
-                            <h3>Qual seu telefone de contato?</h3>
-                            <input type="text" name="user_phone" placeholder="Seu telefone" required>
-                        </div>
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem:</label>
+                                <textarea id="mensagem" name="mensagem" rows="4"
+                                    placeholder="Insira sua mensagem"></textarea>
+                            </div>
 
-                        <div class="input-box full-width">
-                            <h3>Mensagem:</h3>
-                            <textarea name="message" placeholder="Digite sua mensagem" required></textarea>
-                        </div>
-
-                        <div class="full-width button-container">
-                            <button class="button button-formulario" type="submit">Enviar</button>
-                        </div>
-                    </form>
+                            <div class="enviar-container">
+                                <button type="submit" class="btn-enviar">Enviar</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -205,7 +209,7 @@
             </div>
         </div>
     </footer>
-
+     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="js/contato.js"></script>
 </body>
 
