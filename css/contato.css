@@ -288,6 +288,7 @@ header .container {
     display: block;
     margin-bottom: 8px;
     font-size: 12px;
+    font-weight: 500;
     color: white;
 }
 
@@ -296,7 +297,7 @@ header .container {
     width: 100%;
     padding: 12px;
     background: transparent;
-    border: 2px solid #FF9966;
+    border: 4px solid #FF9966;
     border-radius: 8px;
     color: white;
     font-size: 12px;
@@ -304,7 +305,7 @@ header .container {
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: #FF9966;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .enviar-container {
