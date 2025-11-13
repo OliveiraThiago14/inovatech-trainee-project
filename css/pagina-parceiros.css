@@ -282,22 +282,22 @@ header .container {
   position: relative;
 }
 .inicio, .quem-somos, .servi-os, .parceiros, .contatos {
-    cursor: pointer; /* Adiciona cursor de clique para a área */
+    cursor: pointer; /
 }
 
-/* Base de Transição para todos os textos de navegação */
+
 .in-cio, .quem-somos2, .servi-os2, .parceiros2, .contatos2 {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Interatividade: Efeito ao passar o mouse sobre os links */
+
 .inicio:hover .in-cio, 
 .quem-somos:hover .quem-somos2, 
 .servi-os:hover .servi-os2, 
 .parceiros:hover .parceiros2, 
 .contatos:hover .contatos2 {
-    color: #FF9966; /* Cor mais escura da marca */
-    transform: scale(1.05); /* Pequeno aumento para destacar */
+    color: #FF9966; 
+    transform: scale(1.05); 
 }
 .in-cio {
   color: #000000;
@@ -582,7 +582,7 @@ header .container {
   position: relative;
 }
 .entre-em-contato-conosco {
-  color: #681175;
+  color: #ffffff;
   text-align: center;
   font-family: "Unbounded", sans-serif;
   font-size: 24px;
@@ -664,10 +664,10 @@ header .container {
     color: rgba(255, 153, 102, 0.5);
 }
 
-/* Interatividade: Efeito de Foco (quando o campo é clicado) */
+
 .frame-50:focus-within, 
 .frame-502:focus-within {
-    border-color: #ffffff; /* Borda branca para destacar o campo ativo */
+    border-color: #ffffff; 
 }
 .campos-formulario-contato2 {
   display: flex;
@@ -755,22 +755,22 @@ header .container {
  position: relative;
  box-shadow: 2.36px 4.71px 11.79px 0px rgba(0, 0, 0, 0.25);
  overflow: hidden;
-  /* Interatividade: Base de Transição */
+  
   transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease;
   cursor: pointer;
-  border: none; /* Garante que não há borda padrão de botão */
+  border: none; 
 }
 
-/* Interatividade: Efeito Hover do Botão */
+
 .formulario-botao:hover {
-    background: #ff7d40; /* Cor um pouco mais vibrante */
+    background: #ff7d40; 
     box-shadow: 0px 4px 15px 5px rgba(255, 153, 102, 0.5);
 }
 
-/* Interatividade: Efeito Active (Clique) do Botão */
+
 .formulario-botao:active {
-    background: #cc5c2d; /* Cor mais escura */
-    transform: translateY(1px); /* Simula o botão "afundando" */
+    background: #cc5c2d; 
+    transform: translateY(1px); 
     box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.25);
 }
 .enviar {
@@ -1135,7 +1135,7 @@ header .container {
   height: 484px;
   position: relative;
 }
-/* Interatividade Contribuições: Efeito de "levantar" no hover */
+
 .contribui-es-orc-estra:hover, 
 .contribui-es-linux:hover, 
 .contribui-es-adobe:hover {
