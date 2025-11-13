@@ -80,51 +80,36 @@
       <img class="secao-contato-1" src="assets/imagens-parceiros/secao-contato.jpg" />
       <div class="frame-54">
         <div class="entre-em-contato-conosco">Entre em contato conosco!</div>
-        <div class="component-1-formulario-contato">
-          <div class="campos-formulario-contato">
-            <label for="como_conheceu" class="qual-seu-nome">Por onde nos conheceu?</label>
-            <div class="frame-50">
-              <div class="frame-53">
-                <input type="text" id="como_conheceu" name="como_conheceu" placeholder="Insira onde nos conheceu" class="insira-seu-nome">
-              </div>
+        <form id="contact-form" class="form-grid" action="agradecimento.html">
+            <div class="input-box">
+                <h3>Qual seu nome?</h3>
+                <input type="text" name="user_name" placeholder="Seu nome" required>
             </div>
-          </div>
-          <div class="campos-formulario-contato2">
-            <label for="email" class="qual-seu-nome">Qual seu e-mail?</label>
-            <div class="frame-50">
-              <div class="frame-53">
-                <input type="email" id="email" name="email" placeholder="Insira seu e-mail" class="insira-seu-nome">
-              </div>
+            <div class="input-box">
+                <h3>Qual seu e-mail?</h3>
+                <input type="email" name="user_email" placeholder="Seu e-mail" required>
             </div>
-          </div>
-          <div class="campos-formulario-contato3">
-            <label for="mensagem" class="qual-seu-nome">Mensagem:</label>
-            <div class="frame-502">
-              <div class="frame-53">
-               <textarea id="mensagem" name="mensagem" placeholder="Insira sua mensagem" class="insira-seu-nome"></textarea>
-              </div>
+
+            <div class="input-box">
+                <h3>Por onde nos conheceu?</h3>
+                <input type="text" name="user_origin" placeholder="Como nos conheceu?" required>
             </div>
-          </div>
-          <div class="campos-formulario-contato4">
-            <label for="telefone" class="qual-seu-nome">Qual seu telefone de contato?</label>
-            <div class="frame-50">
-              <div class="frame-53">
-                <input type="tel" id="telefone" name="telefone" placeholder="Insira seu telefone" class="insira-seu-nome">
-              </div>
+            <div class="input-box">
+                <h3>Qual seu telefone de contato?</h3>
+                <input type="text" name="user_phone" placeholder="Seu telefone" required>
             </div>
-          </div>
-          <div class="campos-formulario-contato5">
-            <label for="nome" class="qual-seu-nome">Qual seu nome?</label>
-            <div class="frame-50">
-              <div class="frame-53">
-                <input type="text" id="nome" name="nome" placeholder="Insira seu nome" class="insira-seu-nome">
-              </div>
+
+            <div class="input-box full-width">
+                <h3>Mensagem:</h3>
+                <textarea name="message" placeholder="Digite sua mensagem" required></textarea>
             </div>
-          </div>
-        </div>
-        <div class="formulario-botao">
-          <div class="enviar">Enviar</div>
-        </div>
+
+            <div class="full-width button-container">
+                <button class="formulario-botao" type="submit">
+                    <div class="enviar">Enviar</div>
+                </button>
+            </div>
+        </form>
       </div>
     </div>
     <div class="footer">

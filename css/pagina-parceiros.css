@@ -760,7 +760,48 @@ header .container {
   cursor: pointer;
   border: none; 
 }
+.form-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+    gap: 20px; /* Espaço entre os itens do formulário */
+    align-self: stretch; /* Garante que o formulário ocupe o espaço disponível */
+    position: relative; /* Mantenha 'relative' se o layout interno usar absolutos, mas Flexbox é preferível */
+    height: 300px; /* Mantém a altura fixa do container original */
+}
 
+/* 2. Estilo dos Contêineres de Campo: input-box */
+.input-box {
+    /* Define que 2 campos ocuparão a largura total (50% - metade do gap) */
+    width: calc(50% - 10px); 
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    /* Copiado o posicionamento dos campos para manter a consistência, mas o Flexbox deve gerenciar isso */
+    position: relative; 
+}
+
+/* 3. Estilo para o campo Mensagem e o Contêiner do Botão: full-width */
+.full-width {
+    width: 100% !important; /* Força a ocupar a largura total para campos longos (Mensagem) */
+}
+
+/* 4. Estilo do Título do Campo (h3) */
+.form-grid h3 {
+    color: #ffffff;
+    text-align: left;
+    font-family: "Unbounded", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0; 
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 15px;
+    width: 100%;
+}
 
 .formulario-botao:hover {
     background: #ff7d40; 
