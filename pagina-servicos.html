@@ -3,700 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/pagina-servicos.css">    
     <title>Serviços</title>
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>InovaTech - Technology Solutions</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&family=Lato:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/pagina-servicos.css /*">
-    <style id="sections-styles">
+    <link rel="icon" type="image/svg" href="./assets/imagens-contato/inovatech-icon.svg">
 
-/* CSS for section section:Header */
-header {
-    padding: 20px;
-    position: sticky;
-    top: 0;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background-color: white;
-    border-radius: 25px;
-    box-shadow: 0 4px 10px #917a96;
-
-    padding: 14px 48px;
-
-    max-width: 1500px;
-    margin: 0 auto;
-}
-
-.logo img {
-    height: 60px;
-}
-
-#nav-barra ul {
-    display: flex;
-    list-style: none;
-    gap: 28px;
-}
-
-#nav-barra a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding: 5px;
-
-    white-space: nowrap;
-}
-
-#nav-barra a:hover {
-    color: #FF9966;
-}
-
-#nav-barra li+li::before {
-    content: '|';
-    color: #ccc;
-    margin-right: 28px;
-}
-
-#menu-mobile,
-#nav-barra .menu-header {
-    display: none;
-}
-
-@media (max-width: 1380px) {
-
-    /* Barra de navegação */
-    #nav-barra ul,
-    #nav-barra li+li::before {
-        display: none;
-    }
-
-    #menu-mobile {
-        display: block;
-        background: none;
-        border: none;
-        font-size: 46px;
-        color: #9112BC;
-        cursor: pointer;
-    }
-
-    #nav-barra {
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #9112BC;
-
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in-out;
-        visibility: hidden;
-
-        display: flex;
-        flex-direction: column;
-
-        padding: 20px 24px;
-        box-sizing: border-box;
-    }
-
-    #nav-barra.ativo {
-        transform: translateX(0);
-        visibility: visible;
-    }
-
-    #nav-barra ul {
-        display: flex;
-        flex-direction: column;
-        padding-top: 0;
-        gap: 28px;
-        align-items: flex-start;
-        width: 100%;
-    }
-
-    #nav-barra a {
-        color: white;
-        font-size: 20px;
-        font-weight: 500;
-    }
-
-    #nav-barra a:hover {
-        color: #FF9966;
-    }
-
-    #nav-barra .menu-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 60px;
-    }
-
-    #nav-barra .logo-menu img {
-        height: 60px;
-    }
-
-    #btn-fechar {
-        display: block;
-        background: none;
-        border: none;
-        color: white;
-        font-size: 48px;
-        cursor: pointer;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    /* Barra de navegação */
-    header .container {
-        padding: 8px 20px;
-    }
-
-    .logo img {
-        height: 40px;
-    }
-
-    #menu-mobile {
-        font-size: 32px;
-    }
-}
-
-@keyframes showSideBar {
-    from{margin-left: -100vw;}
-    top{margin-left: -15vw;}
-}
-
-
-/* CSS for section section:Hero */
-.hero-section {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        text-align: center;
-    }
-    .hero-title {
-        margin: 0;
-        color: var(--primary-purple);
-        font-weight: 700;
-        font-size: 64px;
-        line-height: 1.2;
-    }
-    .hero-content {
-        display: flex;
-        flex-direction: column;
-        gap: 23px;
-        text-align: left;
-    }
-    .hero-subtitle {
-        margin: 0;
-        color: var(--primary-purple);
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.2;
-    }
-    .hero-description {
-        margin: 0;
-        color: var(--primary-purple);
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 1.2;
-    }
-    .hero-cta {
-        margin: 0;
-        color: var(--black);
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 1.2;
-    }
-    @media (max-width: 768px) {
-        .hero-title {
-            font-size: 48px;
-        }
-        .hero-subtitle {
-            font-size: 28px;
-        }
-        .hero-description {
-            font-size: 18px;
-        }
-        .hero-cta {
-            font-size: 16px;
-        }
-    }
-
-/* CSS for section section:Services */
-.services-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 48px;
-    }
-    .service-card {
-        width: 800px;
-        max-width: 100%;
-        height: 200px;
-        border-radius: 16px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-size: cover;
-        background-position: center;
-        padding: 20px;
-    }
-    .service-card h3 {
-        margin: 0;
-        color: var(--white);
-        font-weight: 700;
-        font-size: 32px;
-        text-align: center;
-        text-shadow: var(--text-shadow);
-    }
-    .service-card.card-1 {
-        background-image: url('assets/images/50f891cce15e81feabde01ae61cb970a2f02aa70.png');
-    }
-    .service-card.card-1 h3 {
-        font-size: 27.5px;
-    }
-    .service-card.card-2 {
-        background-image: url('assets/images/73d7d158f487969ca80a3aa9a56de97a96ec4f66.png');
-    }
-    .service-card.card-3 {
-        background-image: url('assets/images/8bfa888cc4a8409f1bb6d562bcb85398aa6a6297.png');
-    }
-    @media (max-width: 900px) {
-        .service-card {
-            width: 100%;
-            height: 150px;
-        }
-        .service-card h3 {
-            font-size: 24px;
-        }
-    }
-
-/* CSS for section section:Testimonials */
-.testimonials-section {
-        display: flex;
-        flex-direction: column;
-        gap: 48px;
-    }
-    .testimonials-title {
-        margin: 0;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 1.2;
-        color: var(--black);
-    }
-    .testimonials-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-    }
-    .testimonials-carousel {
-        display: flex;
-        gap: 24px;
-        width: 100%;
-        overflow-x: auto;
-        padding-bottom: 20px;
-    }
-    .testimonial-card {
-        flex: 0 0 424px;
-        max-width: 100%;
-        background-color: var(--primary-purple);
-        border-radius: 16px;
-        box-shadow: 5px 7px 25px 0px rgba(0, 0, 0, 0.4);
-        padding: 34px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        text-align: center;
-        color: var(--white);
-        height: 410px;
-    }
-    .testimonial-card blockquote {
-        margin: 0;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 1.25;
-        text-shadow: var(--text-shadow);
-    }
-    .testimonial-card cite {
-        font-family: 'Lato', sans-serif;
-        font-weight: 300;
-        font-size: 24px;
-        font-style: normal;
-    }
-    .testimonial-nav {
-        display: flex;
-        gap: 24px;
-    }
-    .nav-arrow {
-        width: 88px;
-        height: 88px;
-        background-color: var(--light-purple);
-        border-radius: 50%;
-        border: none;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: background-color 0.3s;
-    }
-    .nav-arrow:hover {
-        background-color: var(--primary-purple);
-    }
-    .nav-arrow.left img {
-        transform: rotate(180deg);
-    }
-    @media (max-width: 1400px) {
-        .testimonials-carousel {
-            justify-content: flex-start;
-        }
-    }
-    @media (max-width: 768px) {
-        .testimonials-title {
-            font-size: 28px;
-        }
-        .testimonial-card {
-            flex-basis: 90%;
-            height: auto;
-            min-height: 350px;
-        }
-        .testimonial-card blockquote, .testimonial-card cite {
-            font-size: 20px;
-        }
-    }
-
-/* CSS for section section:Contact */
-.contact-section {
-        position: relative;
-        padding: 48px 0;
-        background-image: url('assets/images/562d8bf17df9a100139645c1dd82a7db376ca3ae.png');
-        background-size: cover;
-        background-position: center;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    }
-    .contact-container {
-        max-width: 1440px;
-        margin: auto;
-        padding: 0 48px;
-        display: flex;
-        align-items: center;
-        gap: 56px;
-    }
-    .contact-image-side {
-        flex: 1;
-        min-width: 0;
-    }
-    .contact-image-side img {
-        width: 100%;
-        height: auto;
-        border-radius: 25px;
-        display: block;
-    }
-    .contact-form-side {
-        flex: 1.4;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-    }
-    .contact-title {
-        margin: 0;
-        color: var(--white);
-        font-weight: 700;
-        font-size: 24px;
-        text-align: center;
-    }
-    .contact-form {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-    }
-    .form-grid {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px 20px;
-    }
-    .form-group {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }
-    .form-group.full-width {
-        grid-column: 1 / -1;
-    }
-    .form-group label {
-        color: var(--white);
-        font-weight: 700;
-        font-size: 12px;
-    }
-    .form-group input, .form-group textarea {
-        background-color: transparent;
-        border: 4px solid var(--accent-orange);
-        border-radius: 8px;
-        padding: 14px 12px;
-        font-family: 'Lato', sans-serif;
-        font-size: 14px;
-        color: var(--white);
-    }
-    .form-group input::placeholder, .form-group textarea::placeholder {
-        color: rgba(255, 153, 102, 0.5);
-        font-weight: 600;
-    }
-    .form-group textarea {
-        resize: vertical;
-        min-height: 123px;
-    }
-    .submit-button {
-        background-color: var(--accent-orange);
-        border: none;
-        border-radius: 12px;
-        padding: 8px 24px;
-        color: var(--white);
-        font-family: 'Unbounded', sans-serif;
-        font-weight: 700;
-        font-size: 15.4px;
-        cursor: pointer;
-        box-shadow: 2.3px 4.7px 11.8px 0px rgba(0, 0, 0, 0.25);
-        transition: transform 0.2s;
-    }
-    .submit-button:hover {
-        transform: scale(1.05);
-    }
-    .back-to-top-button {
-        position: fixed;
-        bottom: 40px;
-        right: 40px;
-        width: 88px;
-        height: 88px;
-        background-color: rgba(145, 18, 188, 0.6);
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 100;
-    }
-    .back-to-top-button img {
-        width: 50px;
-        height: 50px;
-        transform: rotate(-90deg);
-    }
-    @media (max-width: 1024px) {
-        .contact-container {
-            flex-direction: column;
-        }
-        .contact-image-side {
-            display: none;
-        }
-    }
-    @media (max-width: 768px) {
-        .form-grid {
-            grid-template-columns: 1fr;
-        }
-        .back-to-top-button {
-            width: 60px;
-            height: 60px;
-            right: 20px;
-            bottom: 20px;
-        }
-        .back-to-top-button img {
-            width: 30px;
-            height: 30px;
-        }
-    }
-
-/* CSS for section section:Footer */
-    .footer {
-        background-color: #9112BC;
-        color: white;
-        padding: 32px 0;
-        margin: 20px;
-
-        border-radius: 20px;
-    }
-
-    .footer-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding-bottom: 40px;
-        
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    }
-
-    .footer-col {
-        flex: 1;
-    }
-
-    .logo-footer {
-        margin-bottom: 20px;
-    }
-
-    .logo-footer-img {
-        height: 60px;
-    }
-
-    .contato-footer strong {
-        font-size: 32px;
-        display: block;
-        margin-bottom: 5px;
-    }
-    .contato-footer p {
-        font-size: 20px;
-    }
-
-    #footer-redes {
-        text-align: center;
-    }
-    #footer-redes strong {
-        font-size: 20px;
-        display: block;
-        margin-bottom: 15px;
-        
-        padding-bottom: 5px;
-        border-bottom: 2px solid white;
-        display: inline-block;
-    }
-    .footer-icones {
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-    }
-    .footer-icones img {
-        width: 75px;
-        height: 75px;
-        transition: transform 0.3s;
-    }
-    .footer-icones img:hover {
-        transform: scale(1.1);
-    }
-
-    #footer-nav {
-        display: flex;
-        justify-content: flex-end;
-    }
-    #footer-nav ul {
-        list-style: none;
-        text-align: right;
-    }
-    #footer-nav li {
-        margin-bottom: 18px;
-    }
-    #footer-nav a {
-        color: white;
-        text-decoration: none;
-        font-size: 20px;
-        font-weight: bold;
-    }
-    #footer-nav a:hover {
-        text-decoration: underline;
-    }
-
-    .footer-bottom {
-        text-align: center;
-        padding-top: 30px;
-        font-size: 16px;
-        color: rgba(255, 255, 255, 0.7);
-    }
-
-    @media (max-width: 834px) {
-        
-        /* Footer */
-        .footer {
-            padding: 40px 20px 20px 20px;
-            border-radius: 25px;
-        }
-
-        .footer-container {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 30px;
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-
-        .contato-footer p {
-            word-break: break-all;
-        }
-        
-        #footer-nav {
-            justify-content: center;
-        }
-        #footer-nav ul {
-            text-align: center;
-        }
-        
-        .footer-bottom {
-            padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.3);
-        }
-    }
-
-    @media (max-width: 576px){
-        .logo-footer-img {
-            height: 50px;
-        }
-        .contato-footer strong { 
-            font-size: 20px; 
-        }
-        
-        .footer-icones img {
-            width: 40px;
-            height: 40px;
-        }
-        
-        #footer-nav a { 
-            font-size: 18px; 
-        }
-        
-        .footer-bottom {
-            font-size: 12px;
-        }
-    }
-  </style>
-  <script src="js/pagina-servicos.js" defer></script>
 </head>
 <body>
-<header class="site-header-wrapper">
-    <div id="top" class="container">
-        <div class="site-header">
-            <a href="./index.html" class="logo">
-                <img src="assets/images/I120_212_75_29_71_33.svg" alt="InovaTech Logo Icon" class="logo-icon">
-                <div class="logo-text-container">
-                    <span class="logo-text">Inova<span class="gradient-text">Tech</span></span>
-                    <span class="logo-subtitle">Technology Solutions</span>
     <header>
         <div class="container">
 
             <div class="logo">
-                <img src="../imagens/inovatech-logo.svg" alt="InovaTech Logo">
+                <img src="assets/imagens-contato/inovatech-logo.svg" alt="InovaTech Logo">
             </div>
 
             <nav id="nav-barra">
                 <div class="menu-header">
                     <div class="logo-menu">
-                        <img src="../imagens/inovatech-logo-branca.svg" alt="InovaTech Logo">
+                        <img src="assets/imagens-contato/inovatech-logo-branca.svg" alt="InovaTech Logo">
                     </div>
 
                     <button id="btn-fechar">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                 </div>
-            </a>
-            <nav class="main-nav">                        
+
                 <ul>
                     <li><a href="./index.html">Início</a></li>
-                    <li><a href="./quemsomos.html">Quem Somos</a></li>
+                    <li><a href="./quemsomos.html">Quem somos</a></li>
                     <li><a href="./pagina-servicos.html">Serviços</a></li>
                     <li><a href="./pagina-parceiros.html">Parceiros</a></li>
                     <li><a href="./contato.html">Contatos</a></li>
@@ -709,162 +46,154 @@ header .container {
 
         </div>
     </header>
-<section id="hero" class="hero-section container">
-    <h1 class="hero-title">Nossos Serviços</h1>
-    <div class="hero-content">
-        <h2 class="hero-subtitle">Inovação e inteligência tecnológicas para o futuro da sua empresa</h2>
-        <p class="hero-description">Aqui na InovaTech unimos estratégia, design e tecnologia para ajudar empresas a crescer e inovar por meio de soluções digitais completas e personalizadas.</p>
-        <p class="hero-cta">Conheça um pouco do nosso serviço logo abaixo!</p>
-    </div>
-</section>
-<section id="services" class="services-section container">
-    <div class="service-card card-1">
-        <h3>Consultoria Estratégica</h3>
-    </div>
-    <div class="service-card card-2">
-        <h3>Concepção e Design</h3>
-    </div>
-    <div class="service-card card-3">
-        <h3>Desenvolvimento de Software</h3>
-    </div>
-</section>
-<section id="testimonials" class="testimonials-section container">
-    <h2 class="testimonials-title">Veja abaixo alguns feedbacks de nossos clientes.</h2>
-    <div class="testimonials-wrapper">
-        <div class="testimonials-carousel">
-            <div class="testimonial-card">
-                <blockquote>“A InovaTech nos ajudou a transformar um processo manual em uma plataforma totalmente automatizada. Reduzimos o tempo de execução de tarefas em mais de 40%.”</blockquote>
-                <cite>Lucas Andrade</cite>
-            </div>
-            <div class="testimonial-card">
-                <blockquote>“Recomendo fortemente a InovaTech. São estratégicos, criativos e comprometidos — entregam mais do que prometem.”</blockquote>
-                <cite>Fernanda Costa</cite>
-            </div>
-            <div class="testimonial-card">
-                <blockquote>“Consultoria extremamente completa — a InovaTech não só diagnosticou nossos gargalos, como também apresentou soluções práticas e rápidas de implementar.”</blockquote>
-                <cite>Paula Nogueira</cite>
-            </div>
+    <section id="hero" class="hero-section container">
+        <h1 class="hero-title">Nossos Serviços</h1>
+        <div class="hero-content">
+            <h2 class="hero-subtitle">Inovação e inteligência tecnológicas para o futuro da sua empresa</h2>
+            <p class="hero-description">Aqui na InovaTech unimos estratégia, design e tecnologia para ajudar empresas a crescer e inovar por meio de soluções digitais completas e personalizadas.</p>
+            <p class="hero-cta">Conheça um pouco do nosso serviço logo abaixo!</p>
         </div>
-        <div class="testimonial-nav">
-            <button class="nav-arrow left">
-                <img src="assets/images/I439_1225_439_1140.svg" alt="Previous Testimonial">
-            </button>
-            <button class="nav-arrow right">
-                <img src="assets/images/I439_1225_439_1178.svg" alt="Next Testimonial">
-            </button>
+    </section>
+    <section id="services" class="services-section container">
+        <div class="service-card card-1">
+            <h3>Consultoria Estratégica</h3>
         </div>
-    </div>
-</section>
-<section id="contact" class="contact-section">
-    <div class="contact-container">
-        <div class="contact-image-side">
-            <img src="assets/images/562d8bf17df9a100139645c1dd82a7db376ca3ae.png" alt="Team working in an office">
+        <div class="service-card card-2">
+            <h3>Concepção e Design</h3>
         </div>
-        <div class="contact-form-side">
-            <h2 class="contact-title">Entre em contato conosco!</h2>
-           <form id="contact-form" class="form-grid" action="agradecimento.html">
-                        <div class="input-box">
-                            <h3>Qual seu nome?</h3>
-                            <input type="text" name="user_name" placeholder="Seu nome" required>
-                        </div>
-                        <div class="input-box">
-                            <h3>Qual seu e-mail?</h3>
-                            <input type="email" name="user_email" placeholder="Seu e-mail" required>
-                        </div>
-
-                        <div class="input-box">
-                            <h3>Por onde nos conheceu?</h3>
-                            <input type="text" name="user_origin" placeholder="Como nos conheceu?" required>
-                        </div>
-                        <div class="input-box">
-                            <h3>Qual seu telefone de contato?</h3>
-                            <input type="text" name="user_phone" placeholder="Seu telefone" required>
-                        </div>
-
-                        <div class="input-box full-width">
-                            <h3>Mensagem:</h3>
-                            <textarea name="message" placeholder="Digite sua mensagem" required></textarea>
-                        </div>
-
-                        <div class="full-width button-container">
-                            <button class="button button-formulario" type="submit">Enviar</button>
-                        </div>
-                    </form>
+        <div class="service-card card-3">
+            <h3>Desenvolvimento de Software</h3>
         </div>
-    </div>
-    <a href="#top" class="back-to-top-button">
-        <img src="assets/images/376_844.svg" alt="Back to top">
-    </a>
-</section>
-<footer class="site-footer-wrapper">
-    <div class="container">
-        <div class="footer-main">
-            <div class="footer-col footer-logo-contact">
-                <a href="#" class="logo footer-logo">
-                    <img src="assets/images/I351_1196_316_625_316_592_71_33.svg" alt="InovaTech Logo Icon" class="logo-icon">
-                    <div class="logo-text-container">
-                        <span class="logo-text">Inova<span class="gradient-text">Tech</span></span>
-                        <span class="logo-subtitle">Technology Solutions</span>
-<footer class="footer">
-        <div class="container">
-            <div class="footer-container">
-                <div class="footer-col" id="footer-logo-contato">
-                    <div class="logo-footer">
-                        <img src="../imagens/inovatech-logo-branca.svg" alt="InovaTech Logo" class="logo-footer-img">
-                    </div>
-                    <div class="contato-footer">
-                        <strong>Contatos</strong>
-                        <p>contato@inovatech.com.br</p>
-                    </div>
+    </section>
+    <section id="testimonials" class="testimonials-section container">
+        <h2 class="testimonials-title">Veja abaixo alguns feedbacks de nossos clientes.</h2>
+        <div class="testimonials-wrapper">
+            <div class="testimonials-carousel">
+                <div class="testimonial-card">
+                    <blockquote>“A InovaTech nos ajudou a transformar um processo manual em uma plataforma totalmente automatizada. Reduzimos o tempo de execução de tarefas em mais de 40%.”</blockquote>
+                    <cite>Lucas Andrade</cite>
+                </div>
+                <div class="testimonial-card">
+                    <blockquote>“Recomendo fortemente a InovaTech. São estratégicos, criativos e comprometidos — entregam mais do que prometem.”</blockquote>
+                    <cite>Fernanda Costa</cite>
+                </div>
+                <div class="testimonial-card">
+                    <blockquote>“Consultoria extremamente completa — a InovaTech não só diagnosticou nossos gargalos, como também apresentou soluções práticas e rápidas de implementar.”</blockquote>
+                    <cite>Paula Nogueira</cite>
                 </div>
             </div>
-            <div class="footer-col footer-social">
-                <h3 class="footer-heading-light">Acesse nossas redes sociais</h3>
-                <div class="social-icons">
-                    <!--merged image-->
-                    <a href="#" class="social-icon-link">
-                        <img src="assets/images/I351_1196_316_625_620_1815_390_835.svg" alt="Instagram background" class="social-bg">
-                        <img src="assets/images/7f5b3e909c93c2feda363a3958d7e4a616fd33dd.png" alt="Instagram" class="social-icon">
-                    </a>
-                    <!--merged image-->
-                    <a href="#" class="social-icon-link">
-                        <img src="assets/images/I351_1196_316_625_620_1816_390_839.svg" alt="LinkedIn background" class="social-bg">
-                        <img src="assets/images/01bd92eb06873bdc30b1cb5f9c78b1ef5a9559d4.png" alt="LinkedIn" class="social-icon">
-                    </a>
-                    <!--merged image-->
-                    <a href="#" class="social-icon-link">
-                        <img src="assets/images/I351_1196_316_625_620_1817_390_838.svg" alt="WhatsApp background" class="social-bg">
-                        <img src="assets/images/15599b39c59c8e12b07e5f43a10b484cf3cce3aa.png" alt="WhatsApp" class="social-icon">
-                    </a>
+            <div class="testimonial-nav">
+                <button class="nav-arrow left">
+                    <img src="assets/images/I439_1225_439_1140.svg" alt="Previous Testimonial">
+                </button>
+                <button class="nav-arrow right">
+                    <img src="assets/images/I439_1225_439_1178.svg" alt="Next Testimonial">
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-image-side">
+                <img src="assets/images/562d8bf17df9a100139645c1dd82a7db376ca3ae.png" alt="Team working in an office">
+            </div>
+            <div class="contact-form-side">
+                <h2 class="contact-title">Entre em contato conosco!</h2>
+            <form id="contact-form" class="form-grid" action="agradecimento.html">
+                            <div class="input-box">
+                                <h3>Qual seu nome?</h3>
+                                <input type="text" name="user_name" placeholder="Seu nome" required>
+                            </div>
+                            <div class="input-box">
+                                <h3>Qual seu e-mail?</h3>
+                                <input type="email" name="user_email" placeholder="Seu e-mail" required>
+                            </div>
 
-                <div class="footer-col" id="footer-redes">
-                    <strong>Acesse nossas redes sociais</strong>
-                    <div class="footer-icones">
-                        <a href="#" target="_blank"><img src="imagens-contato/insta-icon.svg"
-                                alt="Instagram"></a>
-                        <a href="#" target="_blank"><img src="imagens-contato/linkedin-icon.svg"
-                                alt="LinkedIn"></a>
-                        <a href="#" target="_blank"><img src="imagens-contato/whatsapp-icon.svg"
-                                alt="WhatsApp"></a>
+                            <div class="input-box">
+                                <h3>Por onde nos conheceu?</h3>
+                                <input type="text" name="user_origin" placeholder="Como nos conheceu?" required>
+                            </div>
+                            <div class="input-box">
+                                <h3>Qual seu telefone de contato?</h3>
+                                <input type="text" name="user_phone" placeholder="Seu telefone" required>
+                            </div>
+
+                            <div class="input-box full-width">
+                                <h3>Mensagem:</h3>
+                                <textarea name="message" placeholder="Digite sua mensagem" required></textarea>
+                            </div>
+
+                            <div class="full-width button-container">
+                                <button class="button button-formulario" type="submit">Enviar</button>
+                            </div>
+                        </form>
+            </div>
+        </div>
+        <a href="#top" class="back-to-top-button">
+            <img src="assets/images/376_844.svg" alt="Back to top">
+        </a>
+    </section>
+    <footer class="footer">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer-col" id="footer-logo-contato">
+                        <div class="logo-footer">
+                            <img src="../imagens/inovatech-logo-branca.svg" alt="InovaTech Logo" class="logo-footer-img">
+                        </div>
+                        <div class="contato-footer">
+                            <strong>Contatos</strong>
+                            <p>contato@inovatech.com.br</p>
+                        </div>
                     </div>
                 </div>
+                <div class="footer-col footer-social">
+                    <h3 class="footer-heading-light">Acesse nossas redes sociais</h3>
+                    <div class="social-icons">
+                        <!--merged image-->
+                        <a href="#" class="social-icon-link">
+                            <img src="assets/images/I351_1196_316_625_620_1815_390_835.svg" alt="Instagram background" class="social-bg">
+                            <img src="assets/images/7f5b3e909c93c2feda363a3958d7e4a616fd33dd.png" alt="Instagram" class="social-icon">
+                        </a>
+                        <!--merged image-->
+                        <a href="#" class="social-icon-link">
+                            <img src="assets/images/I351_1196_316_625_620_1816_390_839.svg" alt="LinkedIn background" class="social-bg">
+                            <img src="assets/images/01bd92eb06873bdc30b1cb5f9c78b1ef5a9559d4.png" alt="LinkedIn" class="social-icon">
+                        </a>
+                        <!--merged image-->
+                        <a href="#" class="social-icon-link">
+                            <img src="assets/images/I351_1196_316_625_620_1817_390_838.svg" alt="WhatsApp background" class="social-bg">
+                            <img src="assets/images/15599b39c59c8e12b07e5f43a10b484cf3cce3aa.png" alt="WhatsApp" class="social-icon">
+                        </a>
+
+                    <div class="footer-col" id="footer-redes">
+                        <strong>Acesse nossas redes sociais</strong>
+                        <div class="footer-icones">
+                            <a href="#" target="_blank"><img src="imagens-contato/insta-icon.svg"
+                                    alt="Instagram"></a>
+                            <a href="#" target="_blank"><img src="imagens-contato/linkedin-icon.svg"
+                                    alt="LinkedIn"></a>
+                            <a href="#" target="_blank"><img src="imagens-contato/whatsapp-icon.svg"
+                                    alt="WhatsApp"></a>
+                        </div>
+                    </div>
+                </div>
+                <nav class="footer-col footer-nav">
+                    <ul>
+                        <li><a href="./index.html">Início</a></li>
+                        <li><a href="./quemsomos.html">Quem Somos</a></li>
+                        <li><a href="./pagina-servicos.html">Serviços</a></li>
+                        <li><a href="./pagina-parceiros.html">Parceiros</a></li>
+                        <li><a href="./contato.html">Contatos</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="footer-col footer-nav">
-                <ul>
-                    <li><a href="./index.html">Início</a></li>
-                    <li><a href="./quemsomos.html">Quem Somos</a></li>
-                    <li><a href="./pagina-servicos.html">Serviços</a></li>
-                    <li><a href="./pagina-parceiros.html">Parceiros</a></li>
-                    <li><a href="./contato.html">Contatos</a></li>
-                </ul>
-            </nav>
+            <div class="footer-bottom">
+                <p>Este sistema foi criado como parte do nosso Processo Trainee. | 2025 Todos os direitos reservados.</p>
+            </div>
         </div>
-        <div class="footer-bottom">
-            <p>Este sistema foi criado como parte do nosso Processo Trainee. | 2025 Todos os direitos reservados.</p>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="./js/pagina-servicos.js"></script>
-</footer>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script src="./js/pagina-servicos.js"></script>
+    </footer>
+    <script src="js/pagina-servicos.js" defer></script>
 </body>
 </html>

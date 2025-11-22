@@ -25,18 +25,18 @@ const form = document.getElementById("contact-form");
     
     emailjs.sendForm(serviceID, templateCliente, this)
         .then(() => {
-        console.log("E-mail enviado ao cliente com sucesso!");
-
+            console.log("E-mail enviado ao cliente com sucesso!");
         
-        return emailjs.sendForm(serviceID, templateInovatech, form);
+        
+            return emailjs.sendForm(serviceID, templateInovatech, form);
         })
         .then(() => {
-        console.log("Notificação enviada à Inovatech com sucesso!");
+            console.log("Notificação enviada à Inovatech com sucesso!");
 
-        window.location.href = "agradecimento.html";
+            window.location.href = "agradecimento.html";
         })
         .catch((error) => {
-        console.error("Erro ao enviar:", error);
-        alert("Ocorreu um erro ao enviar. Tente novamente.");
+            console.error("Erro ao enviar:", error);
+            alert("Ocorreu um erro ao enviar. Tente novamente.");
         });
     });

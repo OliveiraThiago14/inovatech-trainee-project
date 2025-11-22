@@ -61,7 +61,7 @@ header .container {
     display: none;
 }
 
-@media (max-width: 1380px) {
+@media (max-width: 1180px) {
 
     /* Barra de navegação */
     #nav-barra ul,
